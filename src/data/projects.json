@@ -1,0 +1,81 @@
+[
+  {
+    "date": "12-10-2025",
+    "tags": ["AI", "Web Development", "Frontend", "Backend", "OCR"],
+    "title": "AI Prescription Scanner",
+    "thumbnail": "https://placehold.co/800x600/e2e8f0/1e293b?text=AI+Prescription+Scanner",
+    "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "live": "https://yourproject.com",
+    "repo": "https://github.com/saishhhhhh/project",
+    "link_preview": "https://placehold.co/400x300/4f46e5/ffffff?text=Live+Demo+Preview",
+    "repo_preview": "https://placehold.co/400x300/1f2937/ffffff?text=GitHub+Repo+Preview",
+    "shortDescription": "OCR-based system that scans prescriptions and suggests generic medicines.",
+    "techstack": ["React", "Node", "Python", "OCR", "LangChain"],
+    "features": [
+      "OCR prescription scanning",
+      "Medicine extraction using NLP",
+      "Price comparison + generic alternatives",
+      "Multi-language support"
+    ]
+  },
+  {
+    "date": "01-08-2025",
+    "tags": ["Web Development", "Full Stack", "E-Commerce"],
+    "title": "E-Commerce Platform",
+    "thumbnail": "https://placehold.co/800x600/e2e8f0/1e293b?text=E-Commerce+Platform",
+    "video": "",
+    "live": "https://example.com",
+    "repo": "https://github.com/example/ecommerce",
+    "link_preview": "https://placehold.co/400x300/4f46e5/ffffff?text=E-Commerce+Live+Demo",
+    "repo_preview": "https://placehold.co/400x300/1f2937/ffffff?text=E-Commerce+GitHub",
+    "shortDescription": "A full-stack e-commerce platform with React, Node.js, and MongoDB.",
+    "techstack": ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+    "features": [
+      "User authentication & authorization",
+      "Shopping cart & checkout",
+      "Payment integration",
+      "Order management system",
+      "Admin dashboard"
+    ]
+  },
+  {
+    "date": "15-06-2025",
+    "tags": ["Frontend", "API Integration", "Weather"],
+    "title": "Weather App",
+    "thumbnail": "https://placehold.co/800x600/e2e8f0/1e293b?text=Weather+App",
+    "video": "",
+    "live": "",
+    "repo": "https://github.com/example/weather",
+    "link_preview": "",
+    "repo_preview": "https://placehold.co/400x300/1f2937/ffffff?text=Weather+App+GitHub",
+    "shortDescription": "A beautiful weather application with animated visualizations.",
+    "techstack": ["React", "OpenWeather API", "Framer Motion", "CSS3"],
+    "features": [
+      "Real-time weather data",
+      "7-day forecast",
+      "Interactive maps",
+      "Location-based weather",
+      "Animated weather icons"
+    ]
+  },
+  {
+    "date": "20-04-2025",
+    "tags": ["Full Stack", "Real-time", "Collaboration"],
+    "title": "Task Management System",
+    "thumbnail": "https://placehold.co/800x600/e2e8f0/1e293b?text=Task+Management",
+    "video": "",
+    "live": "https://example.com",
+    "repo": "https://github.com/example/tasks",
+    "link_preview": "https://placehold.co/400x300/4f46e5/ffffff?text=Task+Management+Demo",
+    "repo_preview": "https://placehold.co/400x300/1f2937/ffffff?text=Task+Management+GitHub",
+    "shortDescription": "A collaborative task management system with real-time updates.",
+    "techstack": ["React", "Firebase", "Tailwind CSS", "WebSocket"],
+    "features": [
+      "Real-time collaboration",
+      "Drag & drop task organization",
+      "Team workspaces",
+      "Task assignment & tracking",
+      "Notifications system"
+    ]
+  }
+]

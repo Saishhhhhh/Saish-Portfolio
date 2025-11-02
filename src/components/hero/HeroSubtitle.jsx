@@ -90,7 +90,7 @@ const HeroSubtitle = ({ animationComplete, text }) => {
                 }}
                 whileHover={{ 
                   scale: 1.05, 
-                  backgroundColor: i % 2 === 0 ? "var(--accent-color)" : "var(--accent-alt)",
+                  backgroundColor: "var(--accent-color)",
                   color: "white"
                 }}
               >

@@ -1,49 +1,88 @@
 import { motion } from 'framer-motion';
 
 const Skills = () => {
+  // Icon mapping for technologies
+  const getIconUrl = (skill) => {
+    const iconMap = {
+      // Frontend
+      'HTML': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+      'CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+      'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+      'React.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      'Redux': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
+      'Tailwind CSS': 'https://cdn.worldvectorlogo.com/logos/tailwindcss.svg',
+      'Bootstrap': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
+      // Backend
+      'Node.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+      'Express.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+      'FastAPI': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
+      // Databases
+      'MongoDB': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+      'MySQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+      // AI & Data Science
+      'Python': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+      'NumPy': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg',
+      'Pandas': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg',
+      'Matplotlib': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg',
+      'Seaborn': 'https://logo.svgcdn.com/l/seaborn-icon.svg',
+      'LangChain': 'https://images.seeklogo.com/logo-png/52/1/langchain-logo-png_seeklogo-528369.png',
+      // Developer Tools
+      'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+      'GitHub': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+      // Creative Tools
+      'Photoshop': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg',
+      'Premiere Pro': 'https://images.seeklogo.com/logo-png/38/1/adobe-premiere-logo-png_seeklogo-380789.png',
+      'After Effects': 'https://cdn.worldvectorlogo.com/logos/after-effects-2019.svg',
+      'Filmora': 'https://vectorseek.com/wp-content/uploads/2023/09/Wondershare-Filmora-Video-Editor-Logo-Vector.svg-.png',
+      // Programming Languages
+      'C': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
+      'C++': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
+    };
+    return iconMap[skill] || null;
+  };
+
   // Skill categories and items
   const skillCategories = [
     {
       name: "Frontend",
-      skills: [
-        { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", note: "🔥" },
-        { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", note: "♥" },
-        { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", note: "👍" },
-        { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", note: "💪" },
-        { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg", note: "🚀" }
-      ]
+      emoji: "🖥️",
+      skills: ["HTML", "CSS", "JavaScript", "React.js", "Redux", "Tailwind CSS", "Bootstrap"]
     },
     {
       name: "Backend",
-      skills: [
-        { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", note: "🔥" },
-        { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", note: "⚡" },
-        { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", note: "🐍" },
-        { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg", note: "👌" }
-      ]
+      emoji: "⚙️",
+      skills: ["Node.js", "Express.js", "FastAPI"]
     },
     {
       name: "Databases",
-      skills: [
-        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", note: "🍃" },
-        { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", note: "📊" },
-        { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", note: "🐘" }
-      ]
+      emoji: "🗄️",
+      skills: ["MongoDB", "MySQL"]
     },
     {
-      name: "Dev Tools",
-      skills: [
-        { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", note: "🔄" },
-        { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", note: "🐳" },
-        { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", note: "📝" },
-        { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", note: "🎨" }
-      ]
+      name: "AI & Data Science",
+      emoji: "🤖",
+      skills: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "LangChain"]
+    },
+    {
+      name: "Developer Tools",
+      emoji: "🛠️",
+      skills: ["Git", "GitHub"]
+    },
+    {
+      name: "Creative Tools",
+      emoji: "🎨",
+      skills: ["Photoshop", "Premiere Pro", "After Effects", "Filmora"]
+    },
+    {
+      name: "Programming Languages",
+      emoji: "👨‍💻",
+      skills: ["Python", "C", "C++", "JavaScript"]
     }
   ];
   
   return (
     <div className="min-h-screen py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
         <motion.h2 
           className="text-4xl md:text-5xl font-caveat font-bold text-center mb-16 text-[var(--pencil-color)]"
           initial={{ opacity: 0, y: 20 }}
@@ -77,8 +116,8 @@ const Skills = () => {
           </div>
           
           {/* Content */}
-          <div className="py-6 px-4 sm:py-8 sm:px-8 md:px-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div className="py-6 px-4 sm:py-8 sm:px-8 md:px-12 lg:px-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
               {skillCategories.map((category, categoryIndex) => (
                 <motion.div 
                   key={category.name}
@@ -88,44 +127,36 @@ const Skills = () => {
                   transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  {/* Category heading */}
-                  <h3 className="text-2xl font-caveat font-bold mb-6 text-[var(--pencil-color)] relative inline-block">
-                    {category.name}
-                    <div className="absolute -bottom-2 left-0 right-0 h-1 bg-yellow-300 opacity-50"></div>
+                  {/* Category heading with emoji */}
+                  <h3 className="text-2xl font-caveat font-bold mb-3 text-[var(--pencil-color)]">
+                    {category.emoji} {category.name}
                   </h3>
                   
-                  {/* Skills grid */}
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
-                    {category.skills.map((skill, skillIndex) => (
-                      <motion.div 
-                        key={skill.name}
-                        className="flex flex-col items-center"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.3, delay: categoryIndex * 0.1 + skillIndex * 0.05 }}
-                        viewport={{ once: true }}
-                        whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                      >
-                        {/* Skill icon */}
-                        <div className="w-16 h-16 flex items-center justify-center mb-2">
-                          <img 
-                            src={skill.icon} 
-                            alt={skill.name}
-                            className="w-12 h-12 object-contain"
-                          />
-                        </div>
-                        
-                        {/* Skill name */}
-                        <p className="text-center font-patrick text-[var(--pencil-color)]">
-                          {skill.name}
-                        </p>
-                        
-                        {/* Handwritten annotation */}
-                        <div className="mt-1 font-shadows text-lg transform rotate-3 text-gray-600">
-                          {skill.note}
-                        </div>
-                      </motion.div>
-                    ))}
+                  {/* Skills list - reduced spacing with icons */}
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill, skillIndex) => {
+                      const iconUrl = getIconUrl(skill);
+                      return (
+                        <motion.span 
+                          key={skill}
+                          className="flex items-center gap-2 px-4 py-2 bg-[var(--paper-burnt)] bg-opacity-20 rounded-md text-base font-patrick text-[var(--pencil-color)] border border-gray-300"
+                          initial={{ opacity: 0, scale: 0.9 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.2, delay: categoryIndex * 0.1 + skillIndex * 0.03 }}
+                          viewport={{ once: true }}
+                          whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+                        >
+                          {iconUrl && (
+                            <img 
+                              src={iconUrl} 
+                              alt={skill}
+                              className="w-5 h-5 object-contain"
+                            />
+                          )}
+                          <span>{skill}</span>
+                        </motion.span>
+                      );
+                    })}
                   </div>
                 </motion.div>
               ))}
@@ -137,4 +168,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

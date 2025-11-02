@@ -1,0 +1,243 @@
+[
+  {
+    "date": "15 Jan 2024",
+    "title": "Python",
+    "type": "Skill",
+    "description": "Started learning Python programming language"
+  },
+  {
+    "date": "27 Feb 2024",
+    "title": "C",
+    "type": "Skill",
+    "description": "Learned C programming fundamentals"
+  },
+  {
+    "date": "27 June 2024",
+    "title": "C++",
+    "type": "Skill",
+    "description": "Mastered C++ programming language"
+  },
+  {
+    "date": "3 Aug 2024",
+    "title": "C++ Retail Management System",
+    "type": "Project",
+    "description": "Built a retail management system using C++"
+  },
+  {
+    "date": "8 Aug 2024",
+    "title": "Hackathon (SIH 2024)",
+    "type": "Hackathon",
+    "description": "Participated in Smart India Hackathon 2024"
+  },
+  {
+    "date": "14 Aug 2024",
+    "title": "HTML",
+    "type": "Skill",
+    "description": "Learned HTML for web development"
+  },
+  {
+    "date": "15 Aug 2024",
+    "title": "CSS",
+    "type": "Skill",
+    "description": "Mastered CSS styling and layout"
+  },
+  {
+    "date": "27 Aug 2024",
+    "title": "Amazon Clone",
+    "type": "Project",
+    "description": "Created a clone of Amazon's frontend interface"
+  },
+  {
+    "date": "28 Aug 2024",
+    "title": "Netflix UI Clone",
+    "type": "Project",
+    "description": "Built a Netflix UI clone project"
+  },
+  {
+    "date": "17 Sept 2024",
+    "title": "JavaScript",
+    "type": "Skill",
+    "description": "Learned JavaScript programming"
+  },
+  {
+    "date": "2 Nov 2024",
+    "title": "Calculator",
+    "type": "Project",
+    "description": "Developed a functional calculator application"
+  },
+  {
+    "date": "4 Nov 2024",
+    "title": "To-Do List",
+    "type": "Project",
+    "description": "Built a to-do list application"
+  },
+  {
+    "date": "6 Nov 2024",
+    "title": "Weather App",
+    "type": "Project",
+    "description": "Created a weather application with API integration"
+  },
+  {
+    "date": "8 Nov 2024",
+    "title": "React (1st Time)",
+    "type": "Skill",
+    "description": "First introduction to React framework"
+  },
+  {
+    "date": "5 Dec 2024",
+    "title": "MongoDB",
+    "type": "Skill",
+    "description": "Learned MongoDB database management"
+  },
+  {
+    "date": "11 Dec 2024",
+    "title": "Git",
+    "type": "Skill",
+    "description": "Mastered Git version control system"
+  },
+  {
+    "date": "13 Dec 2024",
+    "title": "GitHub",
+    "type": "Skill",
+    "description": "Learned GitHub for code collaboration"
+  },
+  {
+    "date": "29 Dec 2024",
+    "title": "Bootstrap",
+    "type": "Skill",
+    "description": "Mastered Bootstrap CSS framework"
+  },
+  {
+    "date": "31 Dec 2024",
+    "title": "GameStack Store",
+    "type": "Project",
+    "description": "Built GameStack Store e-commerce platform"
+  },
+  {
+    "date": "5 Jan 2025",
+    "title": "Movie Recommendation System",
+    "type": "Project",
+    "description": "Developed a movie recommendation system (PBL)"
+  },
+  {
+    "date": "18 Jan 2025",
+    "title": "Node",
+    "type": "Skill",
+    "description": "Learned Node.js runtime environment"
+  },
+  {
+    "date": "19 Jan 2025",
+    "title": "Express",
+    "type": "Skill",
+    "description": "Mastered Express.js web framework"
+  },
+  {
+    "date": "22 Jan 2025",
+    "title": "Airbnb Backend Clone",
+    "type": "Project",
+    "description": "Created Airbnb backend clone project"
+  },
+  {
+    "date": "7 Mar 2025",
+    "title": "Hackathon (Hackmatrix 3.0)",
+    "type": "Hackathon",
+    "description": "Participated in Hackmatrix 3.0 hackathon"
+  },
+  {
+    "date": "29 Mar 2025",
+    "title": "Hackathon (BlueBit)",
+    "type": "Hackathon",
+    "description": "Competed in BlueBit hackathon"
+  },
+  {
+    "date": "8 May 2025",
+    "title": "React (2nd Time)",
+    "type": "Skill",
+    "description": "Deep dive into React framework"
+  },
+  {
+    "date": "8 May 2025",
+    "title": "Tailwind CSS",
+    "type": "Skill",
+    "description": "Learned Tailwind CSS utility framework"
+  },
+  {
+    "date": "7 June 2025",
+    "title": "CodeLyft",
+    "type": "Project",
+    "description": "Built CodeLyft project"
+  },
+  {
+    "date": "27 June 2025",
+    "title": "NumPy & Pandas",
+    "type": "Skill",
+    "description": "Learned data manipulation with NumPy and Pandas"
+  },
+  {
+    "date": "13 July 2025",
+    "title": "Data Visualization (Matplotlib & Seaborn)",
+    "type": "Skill",
+    "description": "Mastered data visualization libraries"
+  },
+  {
+    "date": "14 July 2025",
+    "title": "Web Scraping",
+    "type": "Skill",
+    "description": "Learned web scraping techniques"
+  },
+  {
+    "date": "22 July 2025",
+    "title": "MySQL",
+    "type": "Skill",
+    "description": "Learned MySQL relational database"
+  },
+  {
+    "date": "27 July 2025",
+    "title": "ML Algorithms",
+    "type": "Skill",
+    "description": "Studied machine learning algorithms"
+  },
+  {
+    "date": "30 July 2025",
+    "title": "Hackathon (InnoHack 2.0)",
+    "type": "Hackathon",
+    "description": "Participated in InnoHack 2.0 hackathon"
+  },
+  {
+    "date": "10 Aug 2025",
+    "title": "WhatsApp Chat Analyzer",
+    "type": "Project",
+    "description": "Built WhatsApp chat analyzer application"
+  },
+  {
+    "date": "25 Aug 2025",
+    "title": "Hackathon (SIH 2025)",
+    "type": "Hackathon",
+    "description": "Competed in Smart India Hackathon 2025"
+  },
+  {
+    "date": "28 Aug 2025",
+    "title": "LangChain",
+    "type": "Skill",
+    "description": "Learned LangChain for LLM applications"
+  },
+  {
+    "date": "25 Oct 2025",
+    "title": "RAG Gita",
+    "type": "Project",
+    "description": "Developed RAG Gita project"
+  },
+  {
+    "date": "26 Oct 2025",
+    "title": "DevNotes AI",
+    "type": "Project",
+    "description": "Built DevNotes AI application"
+  },
+  {
+    "date": "30 Oct 2025",
+    "title": "DataSense",
+    "type": "Project",
+    "description": "Created DataSense data analysis project"
+  }
+]
+

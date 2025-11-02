@@ -20,9 +20,9 @@ export const NAV_LINKS = [
 
 // Social media links
 export const SOCIAL_LINKS = [
-  { name: 'GitHub', url: 'https://github.com', icon: 'github' },
-  { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'linkedin' },
-  { name: 'Twitter', url: 'https://twitter.com', icon: 'twitter' },
+  { name: 'GitHub', url: 'https://github.com/Saishhhhhh', icon: 'github' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/saishhhhhh/', icon: 'linkedin' },
+  { name: 'Discord', url: 'https://discord.com/users/742974714321829980', icon: 'discord' },
 ];
 
 // Theme colors

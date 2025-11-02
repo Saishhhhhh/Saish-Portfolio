@@ -1,25 +1,19 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const About = () => {
-  const [isSketch, setIsSketch] = useState(false);
-  
-  // Toggle between normal photo and sketch
-  const toggleSketch = () => {
-    setIsSketch(!isSketch);
-  };
   
   // Random facts
   const facts = [
-    "I can solve a Rubik's cube in under 2 minutes",
-    "I've visited 15 countries",
-    "I love making homemade pizza",
-    "I'm a night owl coder"
+    "I can solve five different Rubik's Cubes",
+    "I am a cinephile",
+    "I love buying tech products",
+    "I note down a lot of quotes"
   ];
   
   return (
     <div className="min-h-screen py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
         <motion.h2 
           className="text-4xl md:text-5xl font-caveat font-bold text-center mb-16 text-[var(--pencil-color)]"
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +25,7 @@ const About = () => {
         </motion.h2>
         
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-          {/* Photo with sketch toggle */}
+          {/* Photo */}
           <motion.div 
             className="w-full md:w-2/5"
             initial={{ opacity: 0, x: -50 }}
@@ -40,28 +34,12 @@ const About = () => {
             viewport={{ once: true }}
           >
             <div className="relative w-full max-w-md mx-auto">
-              {/* Normal photo */}
+              {/* Photo */}
               <img 
-                src={isSketch ? "https://placehold.co/400x500/e2e8f0/1e293b?text=Sketch" : "https://placehold.co/400x500/e2e8f0/1e293b?text=Photo"} 
+                src="/Saish.jpg" 
                 alt="Saish" 
                 className="w-full h-auto rounded-lg shadow-lg border-2 border-gray-200"
               />
-              
-              {/* Toggle button */}
-              <motion.button
-                onClick={toggleSketch}
-                className="absolute bottom-4 right-4 bg-white p-2 rounded-full shadow-md"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  {isSketch ? (
-                    <path d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11z" />
-                  ) : (
-                    <path d="M14.06 9L15 9.94L5.92 19H5V18.08L14.06 9Z M17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3Z M14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" />
-                  )}
-                </svg>
-              </motion.button>
               
               {/* Decorative elements */}
               <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-dashed border-gray-300 rounded-lg -z-10"></div>
@@ -86,14 +64,11 @@ const About = () => {
               </h3>
               
               <p className="text-lg font-patrick mb-6 text-[var(--pencil-color)]">
-                I'm a passionate web developer with a love for creating beautiful, functional, and user-friendly websites. 
-                With expertise in React, Node.js, and modern web technologies, I build applications that not only look great 
-                but also perform exceptionally well.
+              I’m Saish — a developer diving into Full-Stack Development and AI. I enjoy turning ideas into working products, especially where web development meets artificial intelligence. I build, break, and rebuild things to learn — mostly experimenting with automation, reasoning, and LLM-powered tools.
               </p>
               
               <p className="text-lg font-patrick mb-8 text-[var(--pencil-color)]">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                or enjoying the outdoors. I believe in continuous learning and pushing the boundaries of what's possible on the web.
+              When I’m not coding, I’m usually hanging out with friends, watching movies, or playing games. I also enjoy casually exploring new tech and ideas, but I’m not always “in grind mode” — sometimes I just relax, scroll memes, and chill like a normal person.
               </p>
               
               {/* Random facts */}
@@ -123,6 +98,19 @@ const About = () => {
                     </motion.div>
                   ))}
                 </div>
+              </div>
+
+              {/* My Journey Button */}
+              <div className="mt-8">
+                <Link to="/journey">
+                  <motion.button
+                    className="px-6 py-3 bg-[var(--accent-color)] text-white font-patrick rounded-md shadow-md hover:shadow-lg transition-all"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    View My Journey
+                  </motion.button>
+                </Link>
               </div>
             </div>
           </motion.div>

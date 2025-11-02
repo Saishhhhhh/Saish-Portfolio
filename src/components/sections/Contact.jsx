@@ -1,66 +1,44 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [formStatus, setFormStatus] = useState({
-    submitted: false,
-    error: false,
-    message: ''
-  });
+  const [state, handleSubmit] = useForm("xwpwyovw");
   const [focused, setFocused] = useState(null);
   
-  // Handle input changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-  
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // Validate form
-    if (!formData.name || !formData.email || !formData.message) {
-      setFormStatus({
-        submitted: false,
-        error: true,
-        message: 'Please fill in all fields'
-      });
-      return;
-    }
-    
-    // Simulate form submission
-    setFormStatus({
-      submitted: true,
-      error: false,
-      message: 'Thanks for your message! I\'ll get back to you soon.'
-    });
-    
-    // Reset form after submission
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
-    
-    // Reset form status after 5 seconds
-    setTimeout(() => {
-      setFormStatus({
-        submitted: false,
-        error: false,
-        message: ''
-      });
-    }, 5000);
-  };
+  if (state.succeeded) {
+    return (
+      <div className="min-h-screen py-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
+          <motion.h2 
+            className="text-4xl md:text-5xl font-caveat font-bold text-center mb-16 text-[var(--pencil-color)]"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Get In Touch
+          </motion.h2>
+          
+          <div className="max-w-4xl mx-auto">
+            <motion.div 
+              className="bg-white rounded-lg p-8 shadow-md border border-gray-200 text-center"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <p className="text-2xl font-caveat text-[var(--pencil-color)] mb-4">
+                Thanks! Your message has been sent to Saish ✅
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    );
+  }
   
   return (
     <div className="min-h-screen py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
         <motion.h2 
           className="text-4xl md:text-5xl font-caveat font-bold text-center mb-16 text-[var(--pencil-color)]"
           initial={{ opacity: 0, y: 20 }}
@@ -87,32 +65,23 @@ const Contact = () => {
                 </h3>
                 
                 <form onSubmit={handleSubmit}>
-                  {/* Form status message */}
-                  {formStatus.message && (
-                    <div className={`mb-6 p-4 rounded-md ${formStatus.error ? 'bg-red-50 text-red-700' : 'bg-green-50 text-green-700'}`}>
-                      {formStatus.message}
-                    </div>
-                  )}
-                  
                   {/* Name input */}
                   <div className="mb-6">
                     <label 
                       htmlFor="name" 
                       className="block mb-2 font-patrick text-[var(--pencil-color)]"
                     >
-                      Name
+                      Your Name
                     </label>
                     <div className={`relative border-b-2 ${focused === 'name' ? 'border-[var(--pencil-color)]' : 'border-gray-300'} transition-colors duration-300`}>
                       <input
-                        type="text"
                         id="name"
+                        type="text"
                         name="name"
-                        value={formData.name}
-                        onChange={handleChange}
                         onFocus={() => setFocused('name')}
                         onBlur={() => setFocused(null)}
                         className="w-full py-2 px-0 bg-transparent font-patrick text-lg focus:outline-none text-[var(--pencil-color)]"
-                        placeholder="Your name"
+                        placeholder="John Doe"
                       />
                       {focused === 'name' && (
                         <motion.div 
@@ -128,23 +97,27 @@ const Contact = () => {
                         />
                       )}
                     </div>
+                    <ValidationError 
+                      prefix="Name" 
+                      field="name"
+                      errors={state.errors}
+                      className="text-red-500 text-sm font-patrick mt-1"
+                    />
                   </div>
-                  
+
                   {/* Email input */}
                   <div className="mb-6">
                     <label 
                       htmlFor="email" 
                       className="block mb-2 font-patrick text-[var(--pencil-color)]"
                     >
-                      Email
+                      Email Address
                     </label>
                     <div className={`relative border-b-2 ${focused === 'email' ? 'border-[var(--pencil-color)]' : 'border-gray-300'} transition-colors duration-300`}>
                       <input
-                        type="email"
                         id="email"
+                        type="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleChange}
                         onFocus={() => setFocused('email')}
                         onBlur={() => setFocused(null)}
                         className="w-full py-2 px-0 bg-transparent font-patrick text-lg focus:outline-none text-[var(--pencil-color)]"
@@ -164,6 +137,12 @@ const Contact = () => {
                         />
                       )}
                     </div>
+                    <ValidationError 
+                      prefix="Email" 
+                      field="email"
+                      errors={state.errors}
+                      className="text-red-500 text-sm font-patrick mt-1"
+                    />
                   </div>
                   
                   {/* Message textarea */}
@@ -178,25 +157,30 @@ const Contact = () => {
                       <textarea
                         id="message"
                         name="message"
-                        value={formData.message}
-                        onChange={handleChange}
+                        rows="5"
                         onFocus={() => setFocused('message')}
                         onBlur={() => setFocused(null)}
-                        rows="5"
                         className="w-full bg-transparent font-patrick text-lg focus:outline-none text-[var(--pencil-color)]"
                         placeholder="Your message here..."
-                      ></textarea>
+                      />
                     </div>
+                    <ValidationError 
+                      prefix="Message" 
+                      field="message"
+                      errors={state.errors}
+                      className="text-red-500 text-sm font-patrick mt-1"
+                    />
                   </div>
                   
                   {/* Submit button */}
                   <motion.button
                     type="submit"
-                    className="px-6 py-3 bg-[var(--pencil-color)] text-white font-patrick text-lg rounded-md shadow-md hover:shadow-lg transition-shadow flex items-center justify-center"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                    disabled={state.submitting}
+                    className="px-6 py-3 bg-[var(--pencil-color)] text-white font-patrick text-lg rounded-md shadow-md hover:shadow-lg transition-shadow flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                    whileHover={!state.submitting ? { scale: 1.05 } : {}}
+                    whileTap={!state.submitting ? { scale: 0.95 } : {}}
                   >
-                    <span className="mr-2">Send Scribble</span>
+                    <span className="mr-2">{state.submitting ? 'Sending...' : 'Send Scribble'}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <line x1="22" y1="2" x2="11" y2="13"></line>
                       <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -230,7 +214,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-patrick text-lg text-[var(--pencil-color)]">
-                        saish@example.com
+                        bsaish404@gmail.com
                       </p>
                     </div>
                   </div>
@@ -245,7 +229,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-patrick text-lg text-[var(--pencil-color)]">
-                        New York, NY
+                        Pune, India
                       </p>
                     </div>
                   </div>
@@ -258,7 +242,7 @@ const Contact = () => {
                     
                     <div className="flex space-x-4">
                       <motion.a 
-                        href="https://github.com" 
+                        href="https://github.com/Saishhhhhh" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-[var(--pencil-color)] hover:opacity-75 transition-opacity"
@@ -271,7 +255,7 @@ const Contact = () => {
                       </motion.a>
                       
                       <motion.a 
-                        href="https://linkedin.com" 
+                        href="https://www.linkedin.com/in/saishhhhhh/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-[var(--pencil-color)] hover:opacity-75 transition-opacity"
@@ -284,15 +268,15 @@ const Contact = () => {
                       </motion.a>
                       
                       <motion.a 
-                        href="https://twitter.com" 
+                        href="https://discord.com/users/742974714321829980" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-[var(--pencil-color)] hover:opacity-75 transition-opacity"
-                        whileHover={{ y: -3 }}
+                        className="text-[var(--pencil-color)] hover:opacity-75 transition-opacity flex items-center justify-center"
+                        whileHover={{ y: -3, scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                          <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
                         </svg>
                       </motion.a>
                     </div>
@@ -307,4 +291,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; 
+export default Contact;
