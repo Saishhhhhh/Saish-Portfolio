@@ -29,7 +29,7 @@ const Button = ({
     }
   };
 
-  const baseStyles = 'px-8 py-3 font-patrick text-xl rounded-md shadow-md transition-all duration-300 relative overflow-hidden group';
+  const baseStyles = 'px-6 py-2.5 md:px-8 md:py-3 font-patrick text-base md:text-xl rounded-md shadow-md transition-all duration-300 relative overflow-hidden group';
   const buttonStyles = `${baseStyles} ${getVariantStyles()} ${className}`;
 
   // Use motion.a for links, motion.button for buttons

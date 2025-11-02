@@ -143,12 +143,12 @@ const Projects = () => {
                     ))}
                   </div>
                   
-                  <div className="flex space-x-4">
+                  <div className="flex flex-col sm:flex-row gap-3 sm:space-x-4">
                     <motion.a
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 bg-[var(--pencil-color)] text-white font-patrick rounded-md shadow-md hover:shadow-lg transition-shadow"
+                      className="px-4 py-2 bg-[var(--pencil-color)] text-white font-patrick rounded-md shadow-md hover:shadow-lg transition-shadow text-center text-sm md:text-base"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -159,7 +159,7 @@ const Projects = () => {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 border border-[var(--pencil-color)] text-[var(--pencil-color)] font-patrick rounded-md hover:bg-gray-100 transition-colors"
+                      className="px-4 py-2 border border-[var(--pencil-color)] text-[var(--pencil-color)] font-patrick rounded-md hover:bg-gray-100 transition-colors text-center text-sm md:text-base"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >

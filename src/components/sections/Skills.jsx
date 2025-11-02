@@ -70,15 +70,15 @@ const Skills = () => {
             {[...Array(20)].map((_, i) => (
               <div 
                 key={i} 
-                className="w-full h-px bg-blue-100" 
+                className="w-full h-px bg-[var(--paper-burnt)] opacity-20" 
                 style={{ top: `${(i + 1) * 30}px` }}
               ></div>
             ))}
           </div>
           
           {/* Content */}
-          <div className="py-8 px-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="py-6 px-4 sm:py-8 sm:px-8 md:px-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               {skillCategories.map((category, categoryIndex) => (
                 <motion.div 
                   key={category.name}

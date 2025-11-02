@@ -31,8 +31,8 @@ export const THEME_COLORS = {
   paperAlt: '#f9f7f1', // Slightly off-white for contrast
   pencil: '#333333',
   pencilLight: '#666666', // Lighter pencil color
-  accent: '#4f46e5', // Indigo color for accent elements
-  accentLight: '#818cf8', // Lighter version for hover states
+  accent: '#6b5237', // Brown color for accent elements
+  accentLight: '#8b6f47', // Lighter brown for hover states
   accentAlt: '#ec4899', // Pink accent for contrast and personality
   success: '#10b981', // Green for success states
   warning: '#f59e0b', // Amber for warning states

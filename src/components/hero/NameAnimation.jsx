@@ -103,70 +103,9 @@ const NameAnimation = ({ name, greeting, setAnimationComplete, setPencilPosition
         }
       }
       
-      // Add personal touch - signature flourish
-      const flourishPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      flourishPath.setAttribute("d", "M " + (xPos + 10) + "," + (nameY + 10) + " c 10,-5 20,5 30,-15");
-      flourishPath.setAttribute("stroke", "var(--accent-alt)");
-      flourishPath.setAttribute("stroke-width", "2");
-      flourishPath.setAttribute("fill", "none");
-      flourishPath.setAttribute("stroke-linecap", "round");
-      
-      const flourishLength = flourishPath.getTotalLength();
-      flourishPath.setAttribute("stroke-dasharray", flourishLength);
-      flourishPath.setAttribute("stroke-dashoffset", flourishLength);
-      
-      svg.appendChild(flourishPath);
-      
-      // Animate flourish
-      pencil.setAttribute("transform", `translate(${xPos + 10}, ${nameY + 10}) rotate(${config.pencilAngle}) scale(${config.pencilScale})`);
-      setPencilPosition({ x: xPos + 10, y: nameY + 10 });
-      
-      const flourishDuration = 400;
-      const flourishStart = Date.now();
-      
-      const animateFlourish = () => {
-        const elapsed = Date.now() - flourishStart;
-        const progress = Math.min(elapsed / flourishDuration, 1);
-        
-        const currentX = xPos + 10 + progress * 30;
-        const currentY = nameY + 10 + Math.sin(progress * Math.PI) * -15;
-        
-        flourishPath.setAttribute("stroke-dashoffset", flourishLength * (1 - progress));
-        pencil.setAttribute("transform", `translate(${currentX}, ${currentY}) rotate(${config.pencilAngle + progress * 30}) scale(${config.pencilScale})`);
-        setPencilPosition({ x: currentX, y: currentY });
-        
-        if (progress < 1) {
-          requestAnimationFrame(animateFlourish);
-        } else {
-          // Hide pencil at the end
-          pencil.setAttribute("opacity", "0");
-          setAnimationComplete(true);
-          
-          // Add emoji after animation completes
-          setTimeout(() => {
-            const emoji = document.createElementNS("http://www.w3.org/2000/svg", "text");
-            emoji.setAttribute("x", xPos + 50);
-            emoji.setAttribute("y", nameY - 10);
-            emoji.setAttribute("font-size", "24");
-            emoji.setAttribute("opacity", "0");
-            emoji.textContent = "✨";
-            svg.appendChild(emoji);
-            
-            // Animate emoji appearance
-            let emojiOpacity = 0;
-            const fadeInEmoji = () => {
-              emojiOpacity += 0.05;
-              emoji.setAttribute("opacity", emojiOpacity);
-              if (emojiOpacity < 1) {
-                requestAnimationFrame(fadeInEmoji);
-              }
-            };
-            fadeInEmoji();
-          }, 300);
-        }
-      };
-      
-      requestAnimationFrame(animateFlourish);
+      // Hide pencil at the end
+      pencil.setAttribute("opacity", "0");
+      setAnimationComplete(true);
     }
     
     // Start the animation
@@ -184,38 +123,6 @@ const NameAnimation = ({ name, greeting, setAnimationComplete, setPencilPosition
         className="w-full h-full"
         preserveAspectRatio="xMidYMid meet"
       ></svg>
-      
-      {/* Personal touch - animated background elements */}
-      <motion.div
-        className="absolute -z-10 w-full h-full pointer-events-none"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        {[...Array(5)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full bg-gradient-to-r from-[var(--accent-color)] to-[var(--accent-alt)] opacity-5"
-            style={{
-              width: Math.random() * 100 + 50,
-              height: Math.random() * 100 + 50,
-              left: `${Math.random() * 80 + 10}%`,
-              top: `${Math.random() * 80 + 10}%`,
-            }}
-            animate={{
-              scale: [1, 1.2, 1],
-              opacity: [0.05, 0.08, 0.05],
-            }}
-            transition={{
-              duration: Math.random() * 3 + 2,
-              repeat: Infinity,
-              repeatType: "reverse",
-              ease: "easeInOut",
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-      </motion.div>
     </div>
   );
 };

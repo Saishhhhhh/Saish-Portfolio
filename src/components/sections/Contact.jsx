@@ -81,7 +81,7 @@ const Contact = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="bg-white rounded-lg p-8 shadow-md border border-gray-200">
+              <div className="bg-white rounded-lg p-4 sm:p-6 md:p-8 shadow-md border border-gray-200">
                 <h3 className="text-2xl font-caveat font-bold mb-6 text-[var(--pencil-color)]">
                   Send me a message
                 </h3>
@@ -214,7 +214,7 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="bg-white rounded-lg p-8 shadow-md border border-gray-200 h-full">
+              <div className="bg-white rounded-lg p-4 sm:p-6 md:p-8 shadow-md border border-gray-200 h-full">
                 <h3 className="text-2xl font-caveat font-bold mb-6 text-[var(--pencil-color)]">
                   Contact Info
                 </h3>

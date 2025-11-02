@@ -5,9 +5,9 @@ import HeroSubtitle from '../hero/HeroSubtitle';
 import HeroButtons from '../hero/HeroButtons';
 import ScrollArrow from '../hero/ScrollArrow';
 import ContactButton from '../hero/ContactButton';
-import DecorativeElements from '../hero/DecorativeElements';
 import ProfessionalTitle from '../hero/ProfessionalTitle';
 import SocialLinks from '../hero/SocialLinks';
+import FloatingBooks from '../hero/FloatingBooks';
 
 /**
  * Main Hero section component
@@ -17,12 +17,12 @@ const Hero = () => {
   const [pencilPosition, setPencilPosition] = useState({ x: 0, y: 0 });
   
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 bg-white">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 old-paper-bg overflow-hidden w-full">
       {/* Sketch-style background */}
       <SketchBackground />
 
-      {/* Decorative elements */}
-      <DecorativeElements animationComplete={animationComplete} />
+      {/* Floating books on sides */}
+      <FloatingBooks animationComplete={animationComplete} />
 
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-center px-4 py-16 relative z-10">

@@ -77,7 +77,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="bg-white rounded-lg p-8 shadow-md border border-gray-200 relative overflow-hidden">
+            <div className="bg-white rounded-lg p-4 sm:p-6 md:p-8 shadow-md border border-gray-200 relative overflow-hidden">
               {/* Paper corner fold */}
               <div className="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-r-[40px] border-t-gray-200 border-r-transparent"></div>
               

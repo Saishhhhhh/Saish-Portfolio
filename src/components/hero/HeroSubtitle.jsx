@@ -37,20 +37,6 @@ const HeroSubtitle = ({ animationComplete, text }) => {
       animate={{ opacity: animationComplete ? 1 : 0 }}
       transition={{ duration: 0.6, delay: 0.2 }}
     >
-      {/* Attention-grabbing hook */}
-      <motion.div
-        className="absolute top-6 md:top-10 right-6 md:right-10 bg-[var(--accent-color)] text-white py-1 px-3 rounded-md rotate-3 shadow-lg"
-        initial={{ opacity: 0, y: -20, rotate: 10 }}
-        animate={{ 
-          opacity: animationComplete ? 1 : 0, 
-          y: animationComplete ? 0 : -20,
-          rotate: 3
-        }}
-        transition={{ duration: 0.5, delay: 1.0, type: "spring" }}
-      >
-        <span className="font-patrick text-sm md:text-base">Available for projects!</span>
-      </motion.div>
-      
       <div className="max-w-[600px] w-full mx-auto text-center">
         <div className="relative py-5 px-3">
           {/* Background decoration */}
