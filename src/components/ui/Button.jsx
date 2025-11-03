@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 /**
@@ -32,12 +33,16 @@ const Button = ({
   const baseStyles = 'px-6 py-2.5 md:px-8 md:py-3 font-patrick text-base md:text-xl rounded-md shadow-md transition-all duration-300 relative overflow-hidden group';
   const buttonStyles = `${baseStyles} ${getVariantStyles()} ${className}`;
 
-  // Use motion.a for links, motion.button for buttons
-  const Component = href ? motion.a : motion.button;
+  // Determine internal vs external/hash links
+  const isInternalLink = typeof href === 'string' && href.startsWith('/') && !href.startsWith('//');
+
+  // Choose animated component based on link type
+  const MotionLink = motion(Link);
+  const Component = href ? (isInternalLink ? MotionLink : motion.a) : motion.button;
   
   return (
     <Component
-      href={href}
+      {...(href ? (isInternalLink ? { to: href } : { href }) : {})}
       className={buttonStyles}
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ 

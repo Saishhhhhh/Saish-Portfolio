@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../ui/Button';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 /**
  * Hero CTA buttons component with enhanced visual appeal
@@ -64,18 +65,18 @@ const HeroButtons = ({ animationComplete }) => {
           </svg>
           Looking to hire?
         </a>
-        <a href="/journey" className="font-patrick hover:text-[var(--accent-color)] transition-colors flex items-center">
+        <Link to="/journey" className="font-patrick hover:text-[var(--accent-color)] transition-colors flex items-center">
           <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 20l9-8-9-8-9 8 9 8z"></path>
           </svg>
           View My Learning Path
-        </a>
-        <a href="/resume" className="font-patrick hover:text-[var(--accent-color)] transition-colors flex items-center">
+        </Link>
+        <Link to="/resume" className="font-patrick hover:text-[var(--accent-color)] transition-colors flex items-center">
           <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
           </svg>
           View resume
-        </a>
+        </Link>
       </motion.div>
     </motion.div>
   );
