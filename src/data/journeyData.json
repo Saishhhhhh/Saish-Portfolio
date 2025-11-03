@@ -192,12 +192,6 @@
     "description": "Learned MySQL relational database"
   },
   {
-    "date": "27 July 2025",
-    "title": "ML Algorithms",
-    "type": "Skill",
-    "description": "Studied machine learning algorithms"
-  },
-  {
     "date": "30 July 2025",
     "title": "Hackathon (InnoHack 2.0)",
     "type": "Hackathon",
@@ -243,7 +237,7 @@
     "date": "02 Nov 2025",
     "title": "Saish Portfolio",
     "type": "Project",
-    "description": "Created DataSense data analysis project"
+    "description": "Created my Portfolio"
   }
 ]
 
