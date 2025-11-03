@@ -5,7 +5,7 @@
 // Site metadata
 export const SITE_CONFIG = {
   title: 'Saish Portfolio',
-  description: 'A full-stack dev balancing frontend finesse with data science depth',
+  description: 'A full-stack dev balancing artificial intelligence with data science depth',
   author: 'Saish',
 };
 

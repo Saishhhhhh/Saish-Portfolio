@@ -1,102 +1,92 @@
 [
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Machine+Learning+Certificate",
-    "title": "Machine Learning — Kaggle",
-    "issuer": "Kaggle",
-    "issuedOn": "Jan 2025",
-    "skillsGained": ["Python", "ML", "Data Cleaning", "EDA"],
-    "verificationLink": "https://www.kaggle.com/learn/certification/example",
-    "shortContext": "Project-based ML learning program"
+    "thumbnail": "/Certificate_Media/DataScience_CWH.jpg",
+    "title": "The Ultimate Job Ready Data Science Course",
+    "issuer": "Code With Harry",
+    "issuedOn": "Sep 2025",
+    "skillsGained": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Data Visualization", "Web Scraping", "Beautiful Soup", "MySQL"],
+    "verificationLink": "",
+    "shortContext": "Comprehensive hands-on Data Science program covering visualization and data analysis."
   },
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=React+Certificate",
-    "title": "React - The Complete Guide",
+    "thumbnail": "/Certificate_Media/Coursera_React.jpeg",
+    "title": "Developing Front-End Apps with React",
     "issuer": "Coursera",
-    "issuedOn": "Mar 2025",
-    "skillsGained": ["React", "JavaScript", "Component Architecture"],
-    "verificationLink": "https://www.coursera.org/verify/example",
-    "shortContext": "Comprehensive React development course"
+    "issuedOn": "Aug 2025",
+    "skillsGained": ["React.js", "Redux.js"],
+    "verificationLink": "https://www.coursera.org/account/accomplishments/verify/Z3RUWXPDCPBP",
+    "shortContext": "Front-end development specialization focused on React and Redux."
   },
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Data+Science+Certificate",
-    "title": "Data Science Fundamentals",
-    "issuer": "YouTube",
-    "issuedOn": "Jun 2025",
-    "skillsGained": ["Python", "Pandas", "NumPy", "Data Analysis"],
-    "verificationLink": "",
-    "shortContext": "Foundational data science concepts and practices"
+    "thumbnail": "/Certificate_Media/Node_Basic.png",
+    "title": "Node Js (Basics)",
+    "issuer": "HackerRank",
+    "issuedOn": "Jul 2025",
+    "skillsGained": ["Node.js", "Express.js"],
+    "verificationLink": "https://www.hackerrank.com/certificates/fe345f5c67c4",
+    "shortContext": "Fundamental backend development concepts with Node and Express."
   },
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Data+Science+Certificate",
-    "title": "Data Science Fundamentals",
-    "issuer": "YouTube",
-    "issuedOn": "Jun 2025",
-    "skillsGained": ["Python", "Pandas", "NumPy", "Data Analysis"],
-    "verificationLink": "",
-    "shortContext": "Foundational data science concepts and practices"
+    "thumbnail": "/Certificate_Media/SQL_Inter.png",
+    "title": "SQL (Intermediate)",
+    "issuer": "HackerRank",
+    "issuedOn": "Jul 2025",
+    "skillsGained": ["MySQL"],
+    "verificationLink": "https://www.hackerrank.com/certificates/e12b139ca016",
+    "shortContext": "Intermediate-level SQL course focusing on joins and data manipulation."
   },
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Data+Science+Certificate",
-    "title": "Data Science Fundamentals",
-    "issuer": "YouTube",
-    "issuedOn": "Jun 2025",
-    "skillsGained": ["Python", "Pandas", "NumPy", "Data Analysis"],
-    "verificationLink": "",
-    "shortContext": "Foundational data science concepts and practices"
+    "thumbnail": "/Certificate_Media/SQL_Basic.png",
+    "title": "SQL (Basic)",
+    "issuer": "HackerRank",
+    "issuedOn": "Jul 2025",
+    "skillsGained": ["MySQL"],
+    "verificationLink": "https://www.hackerrank.com/certificates/4e82d4a420ec",
+    "shortContext": "Introduction to SQL and basic query operations."
   },
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Data+Science+Certificate",
-    "title": "Data Science Fundamentals",
-    "issuer": "YouTube",
-    "issuedOn": "Jun 2025",
-    "skillsGained": ["Python", "Pandas", "NumPy", "Data Analysis"],
-    "verificationLink": "",
-    "shortContext": "Foundational data science concepts and practices"
+    "thumbnail": "/Certificate_Media/Javascript_Basic.png",
+    "title": "JavaScript (Basic)",
+    "issuer": "HackerRank",
+    "issuedOn": "Nov 2024",
+    "skillsGained": ["JavaScript"],
+    "verificationLink": "https://www.hackerrank.com/certificates/3229d4a687bd",
+    "shortContext": "Basic JavaScript certification demonstrating programming fundamentals."
   },
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Data+Science+Certificate",
-    "title": "Data Science Fundamentals",
-    "issuer": "YouTube",
-    "issuedOn": "Jun 2025",
-    "skillsGained": ["Python", "Pandas", "NumPy", "Data Analysis"],
-    "verificationLink": "",
-    "shortContext": "Foundational data science concepts and practices"
+    "thumbnail": "/Certificate_Media/CSS_Basic.png",
+    "title": "CSS (Basic)",
+    "issuer": "HackerRank",
+    "issuedOn": "Sep 2024",
+    "skillsGained": ["CSS"],
+    "verificationLink": "https://www.hackerrank.com/certificates/a4b550e9f9c2",
+    "shortContext": "Introduction to Cascading Style Sheets and layout design principles."
   },
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Data+Science+Certificate",
-    "title": "Data Science Fundamentals",
-    "issuer": "YouTube",
-    "issuedOn": "Jun 2025",
-    "skillsGained": ["Python", "Pandas", "NumPy", "Data Analysis"],
-    "verificationLink": "",
-    "shortContext": "Foundational data science concepts and practices"
+    "thumbnail": "/Certificate_Media/HTML_CSS.png",
+    "title": "HTML, CSS Bootcamp",
+    "issuer": "LetsUpgrade",
+    "issuedOn": "Sep 2024",
+    "skillsGained": ["HTML5", "CSS"],
+    "verificationLink": "https://verify.letsupgrade.in/certificate/LUEHTMLSEP124498",
+    "shortContext": "Comprehensive web design bootcamp focusing on HTML5 and CSS3."
   },
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Data+Science+Certificate",
-    "title": "Data Science Fundamentals",
-    "issuer": "YouTube",
-    "issuedOn": "Jun 2025",
-    "skillsGained": ["Python", "Pandas", "NumPy", "Data Analysis"],
-    "verificationLink": "",
-    "shortContext": "Foundational data science concepts and practices"
+    "thumbnail": "/Certificate_Media/Cpp.png",
+    "title": "Programming in C++ Certification",
+    "issuer": "LetsUpgrade",
+    "issuedOn": "Aug 2024",
+    "skillsGained": ["C++"],
+    "verificationLink": "https://verify.letsupgrade.in/certificate/LUECPPAUG124336",
+    "shortContext": "Core programming fundamentals and object-oriented concepts in C++."
   },
   {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Data+Science+Certificate",
-    "title": "Data Science Fundamentals",
-    "issuer": "YouTube",
-    "issuedOn": "Jun 2025",
-    "skillsGained": ["Python", "Pandas", "NumPy", "Data Analysis"],
-    "verificationLink": "",
-    "shortContext": "Foundational data science concepts and practices"
-  },
-  {
-    "thumbnail": "https://placehold.co/400x300/e2e8f0/1e293b?text=Data+Science+Certificate",
-    "title": "Data Science Fundamentals",
-    "issuer": "YouTube",
-    "issuedOn": "Jun 2025",
-    "skillsGained": ["Python", "Pandas", "NumPy", "Data Analysis"],
-    "verificationLink": "",
-    "shortContext": "Foundational data science concepts and practices"
+    "thumbnail": "/Certificate_Media/Python_Basic.png",
+    "title": "Python (Basic)",
+    "issuer": "HackerRank",
+    "issuedOn": "Aug 2024",
+    "skillsGained": ["Python"],
+    "verificationLink": "https://www.hackerrank.com/certificates/5fac9d5817f5",
+    "shortContext": "Foundational Python programming certification from HackerRank."
   }
 ]
-
