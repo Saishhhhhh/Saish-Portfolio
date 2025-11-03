@@ -29,6 +29,7 @@ const Skills = () => {
       // Developer Tools
       'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
       'GitHub': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+      'Postman': 'https://www.svgrepo.com/show/354202/postman-icon.svg',
       // Creative Tools
       'Photoshop': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg',
       'Premiere Pro': 'https://images.seeklogo.com/logo-png/38/1/adobe-premiere-logo-png_seeklogo-380789.png',
@@ -66,7 +67,7 @@ const Skills = () => {
     {
       name: "Developer Tools",
       emoji: "🛠️",
-      skills: ["Git", "GitHub"]
+      skills: ["Git", "GitHub", "Postman"]
     },
     {
       name: "Creative Tools",
