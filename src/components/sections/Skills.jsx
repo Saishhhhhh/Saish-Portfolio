@@ -26,6 +26,7 @@ const Skills = () => {
       'Matplotlib': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg',
       'Seaborn': 'https://logo.svgcdn.com/l/seaborn-icon.svg',
       'LangChain': 'https://images.seeklogo.com/logo-png/52/1/langchain-logo-png_seeklogo-528369.png',
+      'Machine Learning': "https://cdn-icons-png.flaticon.com/512/3079/3079165.png",
       // Developer Tools
       'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
       'GitHub': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
@@ -62,7 +63,7 @@ const Skills = () => {
     {
       name: "AI & Data Science",
       emoji: "🤖",
-      skills: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "LangChain"]
+      skills: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "LangChain", "Machine Learning"]
     },
     {
       name: "Developer Tools",
@@ -81,6 +82,26 @@ const Skills = () => {
     }
   ];
   
+  const mlAlgorithms = [
+  "Linear_Regression",
+  "Gradient_Descent",
+  "Polynomial_Regression",
+  "Ridge_Regularization",
+  "Lasso_Regression",
+  "ElasticNet_Regression",
+  "Logistic_Regression",
+  "SVM",
+  "Decision Trees",
+  "K-Nearest Neighbors",
+  "Random Forest",
+  "K-Means",
+  "DBSCAN",
+  "Naive Bayes",
+  "AdaBoost",
+  "Gradient Boosting",
+  "XG Boost"
+  ];  
+
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
@@ -136,6 +157,52 @@ const Skills = () => {
                   {/* Skills list - reduced spacing with icons */}
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill, skillIndex) => {
+                      if (skill === "Machine Learning") {
+                        const iconUrl = getIconUrl(skill);
+                        return (
+                          <motion.div 
+                            key={skill}
+                            className="relative group"
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.2, delay: categoryIndex * 0.1 + skillIndex * 0.03 }}
+                            viewport={{ once: true }}
+                          >
+                            {/* Main badge */}
+                            <span 
+                              className="flex items-center gap-2 px-4 py-2 bg-[var(--paper-burnt)] bg-opacity-20 
+                                        rounded-md text-base font-patrick text-[var(--pencil-color)] 
+                                        border border-gray-300 cursor-pointer"
+                            >
+                              <img src={iconUrl} alt="Machine Learning" className="w-5 h-5" />
+                              Machine Learning
+
+                              {/* Info dot */}
+                              <span className="ml-1 text-xs bg-gray-200 px-2 py-0.5 rounded-full">i</span>
+                            </span>
+
+                            {/* Hover Popup */}
+                            <div 
+                              className="absolute left-0 top-12 z-20 hidden group-hover:block 
+                                        bg-white p-4 rounded-lg shadow-xl border border-gray-300 w-64"
+                            >
+                              <h4 className="font-patrick text-lg mb-2 text-[var(--pencil-color)]">
+                                Algorithms
+                              </h4>
+                              <ul className="space-y-1">
+                              {mlAlgorithms.map((algo) => (
+                                <li 
+                                  key={algo} 
+                                  className="font-patrick text-sm text-[var(--pencil-color)]"
+                                >
+                                  {algo}
+                                </li>
+                              ))}
+                            </ul>
+                            </div>
+                          </motion.div>
+                        );
+                      }
                       const iconUrl = getIconUrl(skill);
                       return (
                         <motion.span 
