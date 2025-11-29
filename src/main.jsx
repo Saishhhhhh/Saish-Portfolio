@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import letterPaths from './components/sections/letterPaths'
+import { Analytics } from "@vercel/analytics/react";
 
 // Make letterPaths available globally for the animation
 window.letterPaths = letterPaths;
@@ -10,5 +11,6 @@ window.letterPaths = letterPaths;
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
+    <Analytics />
   </StrictMode>,
 )
