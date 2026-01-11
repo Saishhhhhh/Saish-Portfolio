@@ -1,5 +1,26 @@
 [
   {
+    "date": "11-01-2026",
+    "tags": ["Machine Learning", "Data Science", "LLM / Generative AI", "Web Development"],
+    "title": "Smart Retail 360",
+    "thumbnail": "/Project_Media/Smart_Retail_360_Thumbnail.png",
+    "video": "https://youtu.be/2oQYH_88d4o",
+    "live": "https://smart-retail-360.vercel.app/",
+    "repo": "https://github.com/Saishhhhhh/Smart-Retail-360",
+    "link_preview": "/Project_Media/Smart_Retail_360_Thumbnail.png",
+    "repo_preview": "/Project_Media/Smart_Retail_360_Github.png",
+    "shortDescription": "SmartRetail 360 is a full-stack AI system that helps retail managers decide what to sell, who to target, and how to run profitable marketing campaigns",
+    "techstack": ["Scikit-Learn", "LangChain", "Gemini", "FastAPI", "React", "Pandas", "Matplotlib", "Tailwind CSS", "JavaScript"],
+    "features": [
+      "AI-powered demand forecasting with XGBoost",
+      "Customer segmentation using RFM & K-Means",
+      "Intelligent inventory & AI Driven campaign strategy engine",
+      "Gemini-generated email & WhatsApp campaigns",
+      "Real-time React dashboard powered by FastAPI",
+      "Manager-controlled campaign activation"
+    ]
+  },
+  {
     "date": "30-10-2025",
     "tags": ["LLM / Generative AI", "Web Development", "Data Science"],
     "title": "DataSense",
@@ -18,6 +39,27 @@
       "AI-generated charts & data insights",
       "Secure execution with guardrails",
       "Downloadable reports & visualization code"
+    ]
+  },
+  {
+    "date": "07-06-2025",
+    "tags": ["Web Development", "LLM / Generative AI"],
+    "title": "CodeLyft",
+    "thumbnail": "/Project_Media/CodeLyft_Thumbnail.png",
+    "video": "https://youtu.be/u7WhqwiH4aQ",
+    "live": "https://codelyft.vercel.app/",
+    "repo": "https://github.com/Saishhhhhh/CodeLyft",
+    "link_preview": "/Project_Media/CodeLyft_Thumbnail.png",
+    "repo_preview": "/Project_Media/CodeLyft_Github.png",
+    "shortDescription": "AI-powered learning assistant that builds personalized tech roadmaps, curates YouTube resources, and tracks coding progress.",
+    "techstack": ["React", "Node.js", "Express", "FastAPI", "MongoDB", "Tailwind CSS", "JavaScript", "Python", "Llama"],
+    "features": [
+      "Personalized learning roadmap generation",
+      "AI-ranked YouTube playlist recommendations",
+      "Progress tracking with visual dashboards",
+      "Goal-based tech stack suggestions",
+      "Search & filter curated learning content",
+      "Built-in notes & AI learning assistant"
     ]
   },
   {
@@ -41,24 +83,24 @@
     ]
   },
   {
-    "date": "07-06-2025",
-    "tags": ["Web Development", "LLM / Generative AI"],
-    "title": "CodeLyft",
-    "thumbnail": "/Project_Media/CodeLyft_Thumbnail.png",
-    "video": "https://youtu.be/u7WhqwiH4aQ",
-    "live": "https://codelyft.vercel.app/",
-    "repo": "https://github.com/Saishhhhhh/CodeLyft",
-    "link_preview": "/Project_Media/CodeLyft_Thumbnail.png",
-    "repo_preview": "/Project_Media/CodeLyft_Github.png",
-    "shortDescription": "AI-powered learning assistant that builds personalized tech roadmaps, curates YouTube resources, and tracks coding progress.",
-    "techstack": ["React", "Node.js", "Express", "FastAPI", "MongoDB", "Tailwind CSS", "JavaScript", "Python", "Llama"],
+    "date": "06-01-2026",
+    "tags": ["Machine Learning", "Data Science"],
+    "title": "Box Office Revenue Prediction",
+    "thumbnail": "/Project_Media/Box_Office_Prediction_Thumbnail.png",
+    "video": "https://www.youtube.com/watch?v=o4R94LHmfMU",
+    "live": "https://box-office-revenue-prediction.streamlit.app/",
+    "repo": "https://github.com/Saishhhhhh/Box-Office-Revenue-Prediction",
+    "link_preview": "/Project_Media/Box_Office_Prediction_Thumbnail.png",
+    "repo_preview": "/Project_Media/Box_Office_Prediction_Github.png",
+    "shortDescription": "Box Office Revenue Prediction is a machine learning system that predicts India Net and Worldwide box office collections for Indian movies before release.",
+    "techstack": ["Streamlit", "Scikit-Learn", "Pandas", "Matplotlib", "Seaborn", "Python"],
     "features": [
-      "Personalized learning roadmap generation",
-      "AI-ranked YouTube playlist recommendations",
-      "Progress tracking with visual dashboards",
-      "Goal-based tech stack suggestions",
-      "Search & filter curated learning content",
-      "Built-in notes & AI learning assistant"
+      "Random Forest to predict India Net collections",
+      "Log-space regression to handle extreme revenue values",
+      "A second ML model to estimate Worldwide collections",
+      "Pan-India detection using number of languages",
+      "Genre, industry & release-date intelligence",
+      "A self-collected dataset scraped from Sacnilk"
     ]
   },
   {
@@ -112,7 +154,7 @@
     "link_preview": "/Project_Media/Airbnb_Thumbnail.png",
     "repo_preview": "/Project_Media/Airbnb_Github.png",
     "shortDescription": "Full-stack Airbnb clone with user authentication, property listings, bookings, and image uploads built using Node, Express, MongoDB, and EJS.",
-    "techstack": ["Node.js", "Express", "MongoDB", "Mongoose", "EJS", "Tailwind CSS"],
+    "techstack": ["Node.js", "Express", "MongoDB", "EJS", "Tailwind CSS"],
     "features": [
       "User signup/login with session-based authentication",
       "Host dashboard to list and manage properties",

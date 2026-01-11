@@ -250,6 +250,24 @@
     "title": "Saish Portfolio",
     "type": "Project",
     "description": "Created my Portfolio"
+  },
+  {
+    "date": "04 Jan 2026",
+    "title": "Customer Churn Prediction",
+    "type": "Project",
+    "description": "Machine Learning Classification Project"
+  },
+  {
+    "date": "06 Jan 2026",
+    "title": "Box Office Revenue Prediction",
+    "type": "Project",
+    "description": "Machine Learning Regression Project"
+  },
+  {
+    "date": "11 Jan 2026",
+    "title": "Smart Retail 360",
+    "type": "Project",
+    "description": "Full Stack ML and GEN AI Project"
   }
 ]
 
