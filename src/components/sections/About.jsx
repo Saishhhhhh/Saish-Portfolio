@@ -64,7 +64,7 @@ const About = () => {
               </h3>
               
               <p className="text-lg font-patrick mb-6 text-[var(--pencil-color)]">
-              I’m Saish — a developer diving into Full-Stack Development and AI. I enjoy turning ideas into working products, especially where web development meets artificial intelligence. I build, break, and rebuild things to learn — mostly experimenting with automation, reasoning, and LLM-powered tools.
+              I’m Saish — a data scientist and AI engineer who builds full-stack web products. I love turning data, machine learning models, and GenAI into real, usable platforms where intelligence meets design and deployment. I build, break, and rebuild things to explore automation, reasoning, and LLM-powered systems in the real world.
               </p>
               
               <p className="text-lg font-patrick mb-8 text-[var(--pencil-color)]">

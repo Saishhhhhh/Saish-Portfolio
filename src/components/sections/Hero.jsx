@@ -15,7 +15,7 @@ import FloatingBooks from '../hero/FloatingBooks';
 const Hero = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
   const [pencilPosition, setPencilPosition] = useState({ x: 0, y: 0 });
-  
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 old-paper-bg overflow-hidden w-full">
       {/* Sketch-style background */}
@@ -30,32 +30,32 @@ const Hero = () => {
           {/* Hero Section */}
           <div className="mb-16">
             {/* SVG animation container */}
-            <NameAnimation 
-              name="Saish" 
-              greeting="Hi, I'm" 
+            <NameAnimation
+              name="Saish"
+              greeting="Hi, I'm"
               setAnimationComplete={setAnimationComplete}
               setPencilPosition={setPencilPosition}
             />
-            
+
             {/* Professional Title */}
-            <ProfessionalTitle 
+            <ProfessionalTitle
               animationComplete={animationComplete}
-              title="AI Engineer | Full-Stack Developer | Data Scientist"
+              title="Data Scientist | AI Engineer | Web Developer"
             />
-            
+
             {/* Subtitle */}
-            <HeroSubtitle 
+            <HeroSubtitle
               animationComplete={animationComplete}
               text="A full-stack dev blending AI finesse with data science depth"
             />
-            
+
             {/* Social Links */}
             <SocialLinks animationComplete={animationComplete} />
-            
+
             {/* CTA Buttons */}
             <HeroButtons animationComplete={animationComplete} />
           </div>
-          
+
           {/* Hand-drawn arrow */}
           <ScrollArrow animationComplete={animationComplete} />
         </div>
