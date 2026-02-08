@@ -268,6 +268,30 @@
     "title": "Smart Retail 360",
     "type": "Project",
     "description": "Full Stack ML and GEN AI Project"
+  },
+  {
+    "date": "15 Jan 2026",
+    "title": "Deep Learning",
+    "type": "Skill",
+    "description": "Entering Deep Learning and Transformers"
+  },
+  {
+    "date": "02 Feb 2026",
+    "title": "Natural Language Processing",
+    "type": "Skill",
+    "description": "Started With NLP"
+  },
+  {
+    "date": "06 Feb 2026",
+    "title": "Ride Supply Risk",
+    "type": "Project",
+    "description": "Multi-task ANN for ride supply risk"
+  },
+  {
+    "date": "07 Feb 2026",
+    "title": "Pothole Detection CNN",
+    "type": "Project",
+    "description": "CNN Based Pothole Detection using ResNET(Transfer Learning)"
   }
 ]
 

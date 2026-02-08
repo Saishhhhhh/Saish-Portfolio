@@ -83,6 +83,24 @@
     ]
   },
   {
+    "date": "08-02-2026",
+    "tags": ["Deep Learning", "Machine Learning", "Data Science"],
+    "title": "Pothole Detection CNN",
+    "thumbnail": "/Project_Media/Pothole_Detection_Thumbnail.png",
+    "video": "https://youtu.be/NBsv6wVinII",
+    "live": "https://pothole-detection-cnn.streamlit.app/",
+    "repo": "https://github.com/Saishhhhhh/Pothole-Detection-CNN",
+    "link_preview": "/Project_Media/Pothole_Detection_Thumbnail.png",
+    "repo_preview": "/Project_Media/Pothole_Detection_Github.png",
+    "shortDescription": "CNN-based pothole detection model using transfer learning, achieving 97% test accuracy on road image classification.",
+    "techstack": ["Streamlit", "TensorFlow", "Keras", "Pandas", "Python"],
+    "features": [
+      "CNN-based pothole detection using ResNet transfer learning",
+      "Transfer learning with data augmentation for robustness",
+      "High test accuracy (97%) on unseen data"
+    ]
+  },
+  {
     "date": "06-01-2026",
     "tags": ["Machine Learning", "Data Science"],
     "title": "Box Office Revenue Prediction",
