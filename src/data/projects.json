@@ -1,26 +1,5 @@
 [
   {
-    "date": "11-01-2026",
-    "tags": ["Machine Learning", "Data Science", "LLM / Generative AI", "Web Development"],
-    "title": "Smart Retail 360",
-    "thumbnail": "/Project_Media/Smart_Retail_360_Thumbnail.png",
-    "video": "https://youtu.be/2oQYH_88d4o",
-    "live": "https://smart-retail-360.vercel.app/",
-    "repo": "https://github.com/Saishhhhhh/Smart-Retail-360",
-    "link_preview": "/Project_Media/Smart_Retail_360_Thumbnail.png",
-    "repo_preview": "/Project_Media/Smart_Retail_360_Github.png",
-    "shortDescription": "SmartRetail 360 is a full-stack AI system that helps retail managers decide what to sell, who to target, and how to run profitable marketing campaigns",
-    "techstack": ["Scikit-Learn", "LangChain", "Gemini", "FastAPI", "React", "Pandas", "Matplotlib", "Tailwind CSS", "JavaScript"],
-    "features": [
-      "AI-powered demand forecasting with XGBoost",
-      "Customer segmentation using RFM & K-Means",
-      "Intelligent inventory & AI Driven campaign strategy engine",
-      "Gemini-generated email & WhatsApp campaigns",
-      "Real-time React dashboard powered by FastAPI",
-      "Manager-controlled campaign activation"
-    ]
-  },
-  {
     "date": "30-10-2025",
     "tags": ["LLM / Generative AI", "Web Development", "Data Science"],
     "title": "DataSense",
@@ -39,6 +18,27 @@
       "AI-generated charts & data insights",
       "Secure execution with guardrails",
       "Downloadable reports & visualization code"
+    ]
+  },
+  {
+    "date": "11-01-2026",
+    "tags": ["Machine Learning", "Data Science", "LLM / Generative AI", "Web Development"],
+    "title": "Smart Retail 360",
+    "thumbnail": "/Project_Media/Smart_Retail_360_Thumbnail.png",
+    "video": "https://youtu.be/2oQYH_88d4o",
+    "live": "https://smart-retail-360.vercel.app/",
+    "repo": "https://github.com/Saishhhhhh/Smart-Retail-360",
+    "link_preview": "/Project_Media/Smart_Retail_360_Thumbnail.png",
+    "repo_preview": "/Project_Media/Smart_Retail_360_Github.png",
+    "shortDescription": "SmartRetail 360 is a full-stack AI system that helps retail managers decide what to sell, who to target, and how to run profitable marketing campaigns",
+    "techstack": ["Scikit-Learn", "LangChain", "Gemini", "FastAPI", "React", "Pandas", "Matplotlib", "Tailwind CSS", "JavaScript"],
+    "features": [
+      "AI-powered demand forecasting with XGBoost",
+      "Customer segmentation using RFM & K-Means",
+      "Intelligent inventory & AI Driven campaign strategy engine",
+      "Gemini-generated email & WhatsApp campaigns",
+      "Real-time React dashboard powered by FastAPI",
+      "Manager-controlled campaign activation"
     ]
   },
   {
@@ -80,6 +80,25 @@
       "Smart topic extraction & section-wise notes",
       "Detailed or summarized mode",
       "Live markdown preview & inline editing"
+    ]
+  },
+  {
+    "date": "10-02-2026",
+    "tags": ["Deep Learning", "Machine Learning", "Data Science"],
+    "title": "Traffic Flow Predictor",
+    "thumbnail": "/Project_Media/Traffic_Flow_Predictor_Thumbnail.png",
+    "video": "",
+    "live": "https://traffic-flow-predictor.streamlit.app/",
+    "repo": "https://github.com/Saishhhhhh/Traffic-Flow-Predictor",
+    "link_preview": "/Project_Media/Traffic_Flow_Predictor_Thumbnail.png",
+    "repo_preview": "/Project_Media/Traffic_Flow_Predictor_Github.png",
+    "shortDescription": "A spatiotemporal AI system using Stacked LSTMs to forecast highway congestion and speeds for the next 5 minutes.",
+    "techstack": ["Streamlit", "TensorFlow", "Keras", "Pandas", "Python", "Matplotlib"],
+    "features": [
+      "Predicts next-step speeds for 207 sensors via Stacked LSTMs",
+      "3.26 MPH Accuracy: Achieved high-precision results for reliable urban navigation",
+      "Captures rush-hour and weekly patterns using Sin/Cos time features",
+      "Streamlit and Folium dashboard for real-time sensor monitoring"
     ]
   },
   {

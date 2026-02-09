@@ -75,7 +75,7 @@ const HeroSubtitle = ({ animationComplete, text }) => {
 
           {/* Highlight key skills with accent color */}
           <div className="flex justify-center mt-4 gap-2 flex-wrap">
-            {["LangChain", "React.js", "Deep Learning", "Machine Learning", "Scikit Learn", "FastAPI"].map((skill, i) => (
+            {["LangChain", "React.js", "Deep Learning", "Machine Learning", "Keras", "FastAPI"].map((skill, i) => (
               <motion.span
                 key={i}
                 className="text-xs md:text-sm font-patrick px-2 py-1 rounded-full bg-[var(--paper-alt-color)] text-[var(--pencil-color)]"
