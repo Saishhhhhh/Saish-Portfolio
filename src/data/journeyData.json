@@ -292,6 +292,12 @@
     "title": "Pothole Detection CNN",
     "type": "Project",
     "description": "CNN Based Pothole Detection using ResNET(Transfer Learning)"
+  },
+  {
+    "date": "15 Feb 2026",
+    "title": "SkillFit AI",
+    "type": "Project",
+    "description": "AI-powered desktop tool that measures resume–job market fit and guides targeted upskilling."
   }
 ]
 

@@ -1,5 +1,25 @@
 [
   {
+    "date": "15-02-2026",
+    "tags": ["LLM / Generative AI", "Deep Learning" , "Web Development", "Data Science"],
+    "title": "SkillFit AI",
+    "thumbnail": "/Project_Media/SkillFit_AI_Thumbnail.png",
+    "video": "https://youtu.be/6aciuX2t4sM",
+    "live": "https://github.com/Saishhhhhh/SkillFit-AI/releases/tag/v1.0.0",
+    "repo": "https://github.com/Saishhhhhh/SkillFit-AI",
+    "link_preview": "/Project_Media/SkillFit_AI_Thumbnail.png",
+    "repo_preview": "/Project_Media/SkillFit_AI_Github.png",
+    "shortDescription": "SkillFit AI is a local-first AI system that semantically matches resumes with real job market data to compute market-fit scores and generate personalized upskilling roadmaps.",
+    "techstack": ["LangChain", "Python", "BeautifulSoup", "React", "FastAPI", "TensorFlow", "JavaScript", "Tailwind CSS", "Sentence Transformers"],
+    "features": [
+      "Upload resume for AI-powered skill extraction & verification",
+      "Real-time job scraping from 5+ platforms",
+      "Semantic resume–JD matching with market-fit score",
+      "Skill gap analysis weighted by market demand",
+      "AI-generated learning roadmaps & role recommendations"
+    ]
+  },
+  {
     "date": "30-10-2025",
     "tags": ["LLM / Generative AI", "Web Development", "Data Science"],
     "title": "DataSense",
