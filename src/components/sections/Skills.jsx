@@ -31,6 +31,8 @@ const Skills = () => {
       'Machine Learning': "https://cdn-icons-png.flaticon.com/512/3079/3079165.png",
       'TensorFlow': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
       'Keras': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg',
+      'PyTorch': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg',
+      'NLP': 'https://cdn-icons-png.flaticon.com/512/2040/2040946.png',
       'ANN': 'https://cdn-icons-png.flaticon.com/512/2620/2620244.png',
       'CNN': 'https://cdn-icons-png.flaticon.com/512/1792/1792750.png',
       'Transfer Learning': 'https://cdn-icons-png.flaticon.com/512/8165/8165798.png',
@@ -41,6 +43,7 @@ const Skills = () => {
       'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
       'GitHub': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
       'Postman': 'https://www.svgrepo.com/show/354202/postman-icon.svg',
+      'Docker': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
       // Creative Tools
       'Photoshop': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg',
       'Premiere Pro': 'https://images.seeklogo.com/logo-png/38/1/adobe-premiere-logo-png_seeklogo-380789.png',
@@ -65,7 +68,7 @@ const Skills = () => {
     {
       name: "AI & Data Science",
       emoji: "🤖",
-      skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "Seaborn", "TensorFlow", "Keras", "Transfer Learning", "Machine Learning", "Deep Learning", "Transformer", "LangChain"]
+      skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "Seaborn", "TensorFlow", "Keras", "PyTorch", "NLP", "Transfer Learning", "Machine Learning", "Deep Learning", "Transformer", "LangChain"]
     },
     {
       name: "Web Technologies",
@@ -80,7 +83,7 @@ const Skills = () => {
     {
       name: "Developer Tools",
       emoji: "🛠️",
-      skills: ["Git", "GitHub", "Postman"]
+      skills: ["Git", "GitHub", "Postman", "Docker"]
     },
     {
       name: "Creative Tools",

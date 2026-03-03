@@ -298,6 +298,23 @@
     "title": "SkillFit AI",
     "type": "Project",
     "description": "AI-powered desktop tool that measures resume–job market fit and guides targeted upskilling."
+  },
+  {
+    "date": "22 Feb 2026",
+    "title": "PyTorch",
+    "type": "Skill",
+    "description": "Started with PyTorch"
+  },
+  {
+    "date": "28 Feb 2026",
+    "title": "FastAPI",
+    "type": "Skill",
+    "description": "Learnt More About FastAPI"
+  },
+  {
+    "date": "03 Mar 2026",
+    "title": "Docker",
+    "type": "Skill",
+    "description": "Started with Docker for ML"
   }
 ]
-

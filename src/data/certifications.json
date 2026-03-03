@@ -1,10 +1,41 @@
 [
   {
+    "thumbnail": "/Certificate_Media/Complete_DS_ML_DL_NLP_Bootcamp.jpg",
+    "title": "Complete Data Science, Machine Learning, Deep Learning & NLP Bootcamp",
+    "issuer": "Krish Naik (Udemy)",
+    "issuedOn": "Oct 2025",
+    "skillsGained": [
+      "Statistics & Probability",
+      "Feature Engineering",
+      "Machine Learning Algorithms",
+      "Ensemble Techniques (RF, XGBoost, AdaBoost, GBM)",
+      "Model Evaluation & Hyperparameter Tuning",
+      "Unsupervised Learning (PCA, KMeans, DBSCAN)",
+      "Deep Learning (ANN, CNN, RNN, LSTM, GRU)",
+      "NLP (TF-IDF, Word2Vec, Transformers)",
+      "MLflow & Experiment Tracking",
+      "MLOps & ETL Pipelines",
+      "Docker & Containerization",
+      "Streamlit & FastAPI Deployment"
+    ],
+    "verificationLink": "https://www.udemy.com/certificate/UC-6487c1b0-0097-44d0-9651-c89a6d2b6276/",
+    "shortContext": "Extensive 99+ hour bootcamp covering end-to-end Data Science, Machine Learning, Deep Learning, NLP, MLOps, and cloud deployment with real-world projects and production-grade implementations."
+  },
+  {
     "thumbnail": "/Certificate_Media/DataScience_CWH.jpg",
     "title": "The Ultimate Job Ready Data Science Course",
     "issuer": "Code With Harry",
     "issuedOn": "Sep 2025",
-    "skillsGained": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Data Visualization", "Web Scraping", "Beautiful Soup", "MySQL"],
+    "skillsGained": [
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Data Visualization",
+      "Web Scraping",
+      "Beautiful Soup",
+      "MySQL"
+    ],
     "verificationLink": "",
     "shortContext": "Comprehensive hands-on Data Science program covering visualization and data analysis."
   },
@@ -13,7 +44,10 @@
     "title": "Developing Front-End Apps with React",
     "issuer": "Coursera",
     "issuedOn": "Aug 2025",
-    "skillsGained": ["React.js", "Redux.js"],
+    "skillsGained": [
+      "React.js",
+      "Redux.js"
+    ],
     "verificationLink": "https://www.coursera.org/account/accomplishments/verify/Z3RUWXPDCPBP",
     "shortContext": "Front-end development specialization focused on React and Redux."
   },
@@ -22,7 +56,10 @@
     "title": "Node Js (Basics)",
     "issuer": "HackerRank",
     "issuedOn": "Jul 2025",
-    "skillsGained": ["Node.js", "Express.js"],
+    "skillsGained": [
+      "Node.js",
+      "Express.js"
+    ],
     "verificationLink": "https://www.hackerrank.com/certificates/fe345f5c67c4",
     "shortContext": "Fundamental backend development concepts with Node and Express."
   },
@@ -31,7 +68,9 @@
     "title": "SQL (Intermediate)",
     "issuer": "HackerRank",
     "issuedOn": "Jul 2025",
-    "skillsGained": ["MySQL"],
+    "skillsGained": [
+      "MySQL"
+    ],
     "verificationLink": "https://www.hackerrank.com/certificates/e12b139ca016",
     "shortContext": "Intermediate-level SQL course focusing on joins and data manipulation."
   },
@@ -40,7 +79,9 @@
     "title": "SQL (Basic)",
     "issuer": "HackerRank",
     "issuedOn": "Jul 2025",
-    "skillsGained": ["MySQL"],
+    "skillsGained": [
+      "MySQL"
+    ],
     "verificationLink": "https://www.hackerrank.com/certificates/4e82d4a420ec",
     "shortContext": "Introduction to SQL and basic query operations."
   },
@@ -49,7 +90,9 @@
     "title": "JavaScript (Basic)",
     "issuer": "HackerRank",
     "issuedOn": "Nov 2024",
-    "skillsGained": ["JavaScript"],
+    "skillsGained": [
+      "JavaScript"
+    ],
     "verificationLink": "https://www.hackerrank.com/certificates/3229d4a687bd",
     "shortContext": "Basic JavaScript certification demonstrating programming fundamentals."
   },
@@ -58,7 +101,9 @@
     "title": "CSS (Basic)",
     "issuer": "HackerRank",
     "issuedOn": "Sep 2024",
-    "skillsGained": ["CSS"],
+    "skillsGained": [
+      "CSS"
+    ],
     "verificationLink": "https://www.hackerrank.com/certificates/a4b550e9f9c2",
     "shortContext": "Introduction to Cascading Style Sheets and layout design principles."
   },
@@ -67,7 +112,10 @@
     "title": "HTML, CSS Bootcamp",
     "issuer": "LetsUpgrade",
     "issuedOn": "Sep 2024",
-    "skillsGained": ["HTML5", "CSS"],
+    "skillsGained": [
+      "HTML5",
+      "CSS"
+    ],
     "verificationLink": "https://verify.letsupgrade.in/certificate/LUEHTMLSEP124498",
     "shortContext": "Comprehensive web design bootcamp focusing on HTML5 and CSS3."
   },
@@ -76,7 +124,9 @@
     "title": "Programming in C++ Certification",
     "issuer": "LetsUpgrade",
     "issuedOn": "Aug 2024",
-    "skillsGained": ["C++"],
+    "skillsGained": [
+      "C++"
+    ],
     "verificationLink": "https://verify.letsupgrade.in/certificate/LUECPPAUG124336",
     "shortContext": "Core programming fundamentals and object-oriented concepts in C++."
   },
@@ -85,7 +135,9 @@
     "title": "Python (Basic)",
     "issuer": "HackerRank",
     "issuedOn": "Aug 2024",
-    "skillsGained": ["Python"],
+    "skillsGained": [
+      "Python"
+    ],
     "verificationLink": "https://www.hackerrank.com/certificates/5fac9d5817f5",
     "shortContext": "Foundational Python programming certification from HackerRank."
   }

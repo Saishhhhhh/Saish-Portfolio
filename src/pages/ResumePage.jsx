@@ -1,19 +1,42 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import SketchBackground from '../components/hero/SketchBackground';
 
+const resumes = [
+  {
+    id: 'ds-ml-ai',
+    title: 'Data Science / ML / AI Engineer',
+    path: '/Resume_DataScience.pdf',
+    filename: 'Saish_Resume_DataScience.pdf'
+  },
+  {
+    id: 'gen-ai',
+    title: 'Gen AI Engineer',
+    path: '/Resume_GenAI.pdf',
+    filename: 'Saish_Resume_GenAI.pdf'
+  },
+  {
+    id: 'full-stack-ai',
+    title: 'Full Stack AI',
+    path: '/Resume_FullStack.pdf',
+    filename: 'Saish_Resume_FullStack.pdf'
+  }
+];
+
 const ResumePage = () => {
+  const [activeResume, setActiveResume] = useState(resumes[0]);
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Resume.pdf';
-    link.download = 'Saish_Resume.pdf';
+    link.href = activeResume.path;
+    link.download = activeResume.filename;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -23,7 +46,7 @@ const ResumePage = () => {
     <div className="min-h-screen old-paper-bg">
       <Navbar />
       <SketchBackground />
-      
+
       <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-8 py-20 max-w-7xl">
         {/* Header */}
         <motion.div
@@ -41,6 +64,24 @@ const ResumePage = () => {
             backgroundRepeat: 'repeat-x'
           }}></div>
         </motion.div>
+
+        {/* Resume Selector */}
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          {resumes.map((resume) => (
+            <motion.button
+              key={resume.id}
+              onClick={() => setActiveResume(resume)}
+              className={`px-6 py-3 font-patrick rounded-md transition-all text-lg border-2 ${activeResume.id === resume.id
+                  ? 'bg-[var(--pencil-color)] text-white border-[var(--pencil-color)] shadow-lg'
+                  : 'bg-transparent text-[var(--pencil-color)] border-[var(--pencil-color)] hover:bg-[var(--pencil-color)] hover:text-white hover:bg-opacity-10'
+                }`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {resume.title}
+            </motion.button>
+          ))}
+        </div>
 
         {/* Download Button */}
         <div className="flex justify-center mb-8">
@@ -68,9 +109,9 @@ const ResumePage = () => {
         >
           <div className="w-full" style={{ height: 'calc(100vh - 300px)', minHeight: '800px' }}>
             <iframe
-              src="/Resume.pdf"
+              src={activeResume.path}
               className="w-full h-full"
-              title="Resume PDF Viewer"
+              title={`${activeResume.title} Resume Viewer`}
               style={{ border: 'none' }}
             />
           </div>
