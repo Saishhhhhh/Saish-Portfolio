@@ -53,6 +53,8 @@ const Skills = () => {
       'C': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
       'C++': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
       'Scikit-Learn': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg',
+      'LangGraph': '/langgraph-logo.png',
+      'MCP': '/mcp-logo.png',
     };
     return iconMap[skill] || null;
   };
@@ -68,7 +70,7 @@ const Skills = () => {
     {
       name: "AI & Data Science",
       emoji: "🤖",
-      skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "Seaborn", "TensorFlow", "Keras", "PyTorch", "NLP", "Transfer Learning", "Machine Learning", "Deep Learning", "Transformer", "LangChain"]
+      skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "Seaborn", "TensorFlow", "Keras", "PyTorch", "NLP", "Transfer Learning", "Machine Learning", "Deep Learning", "LangChain", "LangGraph", "MCP"]
     },
     {
       name: "Web Technologies",
@@ -127,7 +129,9 @@ const Skills = () => {
     "CNN",
     "RNN",
     "LSTM",
-    "GRU"
+    "GRU",
+    "Transformers",
+    "LLM"
   ];
 
   return (

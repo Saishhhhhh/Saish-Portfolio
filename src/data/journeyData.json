@@ -316,5 +316,23 @@
     "title": "Docker",
     "type": "Skill",
     "description": "Started with Docker for ML"
+  },
+  {
+    "date": "27 Mar 2026",
+    "title": "LangGraph",
+    "type": "Skill",
+    "description": "Started with LangGraph for Agentic AI"
+  },
+  {
+    "date": "30 Mar 2026",
+    "title": "MCP",
+    "type": "Skill",
+    "description": "Started with MCP for Agentic AI"
+  },
+  {
+    "date": "04 Apr 2026",
+    "title": "AI Newsletter",
+    "type": "Project",
+    "description": "Agentic AI Project which uses MCP and a LLM Agent to make AI Newsletters"
   }
 ]
