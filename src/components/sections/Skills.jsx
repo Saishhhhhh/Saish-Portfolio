@@ -54,7 +54,9 @@ const Skills = () => {
       'C++': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
       'Scikit-Learn': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg',
       'LangGraph': '/langgraph-logo.png',
+      'RAG': '/rag-icon.png',
       'MCP': '/mcp-logo.png',
+      'ChromaDB': 'https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/1/chroma-erzavigj9yrwcd5lup0swm.png/chroma-1xw4nxhjo4c64ndhrqtxp.png',
     };
     return iconMap[skill] || null;
   };
@@ -70,7 +72,7 @@ const Skills = () => {
     {
       name: "AI & Data Science",
       emoji: "🤖",
-      skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "Seaborn", "TensorFlow", "Keras", "PyTorch", "NLP", "Transfer Learning", "Machine Learning", "Deep Learning", "LangChain", "LangGraph", "MCP"]
+      skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "Seaborn", "TensorFlow", "Keras", "PyTorch", "NLP", "Transfer Learning", "Machine Learning", "Deep Learning", "LangChain", "LangGraph", "RAG", "MCP"]
     },
     {
       name: "Web Technologies",
@@ -80,7 +82,7 @@ const Skills = () => {
     {
       name: "Databases",
       emoji: "🗄️",
-      skills: ["MongoDB", "MySQL"]
+      skills: ["MongoDB", "MySQL", "ChromaDB"]
     },
     {
       name: "Developer Tools",
@@ -132,6 +134,23 @@ const Skills = () => {
     "GRU",
     "Transformers",
     "LLM"
+  ];
+
+  const ragAlgorithms = [
+    "Semantic Retrieval",
+    "BM25 Retrieval",
+    "Hybrid Retrieval",
+    "Query Expansion",
+    "Multi-Query Retrieval",
+    "Re-ranking (Cross-Encoder, RRF)",
+    "Context-Aware & Semantic Chunking",
+    "Parent Document & Sentence Window Retrieval",
+    "Hierarchical RAG",
+    "Hypothetical Document Embeddings (HyDE)",
+    "Knowledge Graph RAG",
+    "Self-RAG",
+    "Corrective RAG (C-RAG)",
+    "Agentic RAG"
   ];
 
   return (
@@ -345,6 +364,88 @@ const Skills = () => {
                                       >
                                         <span className="w-1.5 h-1.5 rounded-full bg-[var(--pencil-color)] opacity-60"></span>
                                         {algo.replace(/_/g, ' ')}
+                                      </div>
+                                    ))}
+                                  </div>
+                                </motion.div>
+                              )}
+                            </AnimatePresence>
+                          </motion.div>
+                        );
+                      }
+
+                      if (skill === "RAG") {
+                        const iconUrl = getIconUrl(skill);
+                        const isActive = activeSkill === skill;
+
+                        return (
+                          <motion.div
+                            key={skill}
+                            className="relative"
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.2, delay: categoryIndex * 0.1 + skillIndex * 0.03 }}
+                            viewport={{ once: true }}
+                          >
+                            {/* Main badge */}
+                            <motion.span
+                              onClick={() => toggleSkill(skill)}
+                              whileHover={{ scale: 1.05 }}
+                              animate={{
+                                scale: isActive ? 1.05 : 1,
+                                boxShadow: isActive ? "0 0 15px rgba(255,100,100,0.3)" : "none",
+                                borderColor: isActive ? "var(--pencil-color)" : "transparent"
+                              }}
+                              className={`flex items-center gap-2 px-4 py-2 
+                                        rounded-md text-base font-patrick text-[var(--pencil-color)] 
+                                        border cursor-pointer transition-all duration-300
+                                        ${isActive
+                                  ? 'bg-white border-[var(--pencil-color)] shadow-md ring-2 ring-[var(--paper-burnt)]'
+                                  : 'bg-[var(--paper-burnt)] bg-opacity-30 border-gray-400 border-2'
+                                }`}
+                            >
+                              <img src={iconUrl} alt="RAG" className="w-5 h-5 object-contain" />
+                              <span className="font-bold">RAG</span>
+
+                              {/* Info dot */}
+                              <span className={`ml-1 text-xs px-2 py-0.5 rounded-full transition-colors ${isActive ? 'bg-[var(--pencil-color)] text-white' : 'bg-gray-200'}`}>
+                                {isActive ? '×' : 'i'}
+                              </span>
+                            </motion.span>
+
+                            {/* Popup */}
+                            <AnimatePresence>
+                              {isActive && (
+                                <motion.div
+                                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                                  exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                                  className="absolute left-0 mt-2 z-50
+                                            bg-white p-4 rounded-lg shadow-2xl border-2 border-[var(--pencil-color)] 
+                                            w-[85vw] sm:w-96 max-h-[60vh] overflow-y-auto"
+                                  style={{
+                                    left: '50%',
+                                    transform: 'translateX(-50%)',
+                                  }}
+                                >
+                                  <div className="flex justify-between items-center mb-2 sticky top-0 bg-white pb-2 border-b border-gray-100">
+                                    <h4 className="font-patrick text-xl font-bold text-[var(--pencil-color)]">
+                                      RAG Techniques
+                                    </h4>
+                                    <button onClick={(e) => { e.stopPropagation(); toggleSkill(skill); }} className="text-gray-400 hover:text-red-500">
+                                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                                      </svg>
+                                    </button>
+                                  </div>
+                                  <div className="grid grid-cols-1 gap-y-1.5">
+                                    {ragAlgorithms.map((algo) => (
+                                      <div
+                                        key={algo}
+                                        className="font-patrick text-sm text-gray-700 flex items-start gap-1.5"
+                                      >
+                                        <span className="w-1.5 h-1.5 rounded-full bg-[var(--pencil-color)] opacity-60 mt-1.5 flex-shrink-0"></span>
+                                        <span>{algo}</span>
                                       </div>
                                     ))}
                                   </div>

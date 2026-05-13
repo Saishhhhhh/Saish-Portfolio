@@ -330,9 +330,9 @@
     "description": "Started with MCP for Agentic AI"
   },
   {
-    "date": "04 Apr 2026",
-    "title": "AI Newsletter",
+    "date": "28 Apr 2026",
+    "title": "4Perspective",
     "type": "Project",
-    "description": "Agentic AI Project which uses MCP and a LLM Agent to make AI Newsletters"
+    "description": "Four AI personas debate your decisions in a streaming, RAG-powered LangGraph chat."
   }
 ]
