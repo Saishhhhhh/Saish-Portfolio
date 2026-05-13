@@ -61,16 +61,21 @@ const Experience = () => {
                   {/* Header section */}
                   <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-4">
                     <div className="flex items-start gap-3 sm:gap-4">
-                      {/* Company initial */}
+                      {/* Company logo or initial */}
                       <motion.div
-                        className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[var(--paper-burnt)] bg-opacity-40 border-2 border-[var(--pencil-color)] border-opacity-20 flex items-center justify-center flex-shrink-0"
-                        whileHover={{ rotate: 10, scale: 1.1 }}
+                        className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-white border-2 border-gray-200 flex items-center justify-center flex-shrink-0 shadow-sm overflow-hidden p-1"
+                        whileHover={{ rotate: 5, scale: 1.05 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <span className="font-caveat text-xl sm:text-2xl font-bold text-[var(--pencil-color)]">
-                          {exp.company.charAt(0)}
-                        </span>
+                        {exp.logo ? (
+                          <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain" />
+                        ) : (
+                          <span className="font-caveat text-xl sm:text-2xl font-bold text-[var(--pencil-color)]">
+                            {exp.company.charAt(0)}
+                          </span>
+                        )}
                       </motion.div>
+
 
                       <div>
                         <h3 className="text-xl sm:text-2xl font-caveat font-bold text-[var(--pencil-color)] leading-tight">
