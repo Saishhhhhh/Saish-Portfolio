@@ -1,0 +1,18 @@
+[
+  {
+    "company": "SwiftSafe",
+    "role": "AI Engineering Intern",
+    "subtitle": "Cybersecurity Intelligence RAG System",
+    "startDate": "Mar 2026",
+    "endDate": "May 2026",
+    "location": "Remote | Victoria, Australia",
+    "current": false,
+    "highlights": [
+      "Built a production-grade cybersecurity knowledge platform over a 35K+ chunk knowledge base spanning CVEs, OWASP & MITRE ATT&CK",
+      "Engineered hybrid retrieval pipelines with reranking across 12 cybersecurity categories",
+      "Designed LLM-driven query routing workflows for multi-strategy retrieval and direct inference",
+      "Constructed scalable FastAPI endpoints with source-grounded guardrails for AI pipelines"
+    ],
+    "tags": ["RAG", "ChromaDB", "FastAPI", "LangChain", "Python"]
+  }
+]

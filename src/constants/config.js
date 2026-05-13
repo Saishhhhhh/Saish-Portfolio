@@ -12,6 +12,7 @@ export const SITE_CONFIG = {
 // Navigation links
 export const NAV_LINKS = [
   { name: 'Home', path: '#home' },
+  { name: 'Experience', path: '#experience' },
   { name: 'Projects', path: '#projects' },
   { name: 'About', path: '#about' },
   { name: 'Skills', path: '#skills' },

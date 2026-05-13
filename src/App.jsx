@@ -8,6 +8,7 @@ import Projects from './components/sections/Projects'
 import Certifications from './components/sections/Certifications'
 import About from './components/sections/About'
 import Skills from './components/sections/Skills'
+import Experience from './components/sections/Experience'
 import Contact from './components/sections/Contact'
 import Footer from './components/layout/Footer'
 import ProjectsPage from './pages/ProjectsPage'
@@ -39,6 +40,9 @@ function App() {
                 <main>
                   <section id="home" className="min-h-screen">
                     <Hero />
+                  </section>
+                  <section id="experience" className="min-h-screen">
+                    <Experience />
                   </section>
                   <section id="skills" className="min-h-screen">
                     <Skills />
