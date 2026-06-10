@@ -40,7 +40,7 @@ const Hero = () => {
             {/* Professional Title */}
             <ProfessionalTitle
               animationComplete={animationComplete}
-              title="Data Scientist | AI Engineer | Web Developer"
+              title="ML Engineer | AI Engineer | Data Scientist"
             />
 
             {/* Subtitle */}

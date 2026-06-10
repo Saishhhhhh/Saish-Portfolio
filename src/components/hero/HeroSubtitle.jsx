@@ -28,7 +28,7 @@ const HeroSubtitle = ({ animationComplete, text }) => {
   };
 
   // More balanced professional tone for subtitle
-  const professionalSubtitle = "Blending Data Science depth with GenAI and Web-Development finesse";
+  const professionalSubtitle = "Blending Data Science depth with Agentic AI and Web-Development finesse";
 
   return (
     <motion.div
@@ -75,7 +75,7 @@ const HeroSubtitle = ({ animationComplete, text }) => {
 
           {/* Highlight key skills with accent color */}
           <div className="flex justify-center mt-4 gap-2 flex-wrap">
-            {["LangGraph", "React.js", "Deep Learning", "Machine Learning", "Keras", "FastAPI"].map((skill, i) => (
+            {["LangGraph", "RAG", "Deep Learning", "Machine Learning", "Tensorflow", "FastAPI"].map((skill, i) => (
               <motion.span
                 key={i}
                 className="text-xs md:text-sm font-patrick px-2 py-1 rounded-full bg-[var(--paper-alt-color)] text-[var(--pencil-color)]"

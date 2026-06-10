@@ -57,6 +57,22 @@ const Skills = () => {
       'RAG': '/rag-icon.png',
       'MCP': '/mcp-logo.png',
       'ChromaDB': 'https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/1/chroma-erzavigj9yrwcd5lup0swm.png/chroma-1xw4nxhjo4c64ndhrqtxp.png',
+      // New AI skills
+      'Agentic AI': 'https://cdn-icons-png.flaticon.com/512/4616/4616734.png',
+      'Gen AI': 'https://cdn-icons-png.flaticon.com/512/11865/11865326.png',
+      'Prompt Engineering': 'https://cdn-icons-png.flaticon.com/512/11232/11232672.png',
+      'HuggingFace': 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg',
+      'SBERT': 'https://cdn-icons-png.flaticon.com/512/6062/6062646.png',
+      'Transformers': 'https://cdn-icons-png.flaticon.com/512/2172/2172895.png',
+      // New Databases
+      'Pinecone': 'https://cdn.brandfetch.io/idD-83EGgE/w/400/h/400/theme/dark/icon.jpeg',
+      'PostgreSQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+      'Supabase': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg',
+      // New Dev Tools
+      'Vercel': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg',
+      'VS Code': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+      // New Languages
+      'SQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg',
     };
     return iconMap[skill] || null;
   };
@@ -70,34 +86,44 @@ const Skills = () => {
   // Skill categories and items
   const skillCategories = [
     {
-      name: "AI & Data Science",
+      name: "Gen AI & Agents",
       emoji: "🤖",
-      skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "Seaborn", "TensorFlow", "Keras", "PyTorch", "NLP", "Transfer Learning", "Machine Learning", "Deep Learning", "LangChain", "LangGraph", "RAG", "MCP"]
+      skills: ["LangChain", "LangGraph", "RAG", "Agentic AI", "MCP", "Gen AI", "Prompt Engineering"]
     },
     {
-      name: "Web Technologies",
+      name: "ML / DL",
+      emoji: "🧠",
+      skills: ["Machine Learning", "Deep Learning", "Scikit-Learn", "TensorFlow", "Keras", "PyTorch", "HuggingFace", "SBERT", "Transformers", "NLP", "Transfer Learning"]
+    },
+    {
+      name: "Data Science",
+      emoji: "📊",
+      skills: ["NumPy", "Pandas", "Matplotlib", "Seaborn"]
+    },
+    {
+      name: "Web & Backend",
       emoji: "🌐",
       skills: ["HTML", "CSS", "JavaScript", "React.js", "Redux", "Tailwind CSS", "Bootstrap", "Node.js", "Express.js", "FastAPI"]
     },
     {
-      name: "Databases",
+      name: "Databases & Vector Stores",
       emoji: "🗄️",
-      skills: ["MongoDB", "MySQL", "ChromaDB"]
+      skills: ["MongoDB", "MySQL", "PostgreSQL", "Supabase", "ChromaDB", "Pinecone"]
     },
     {
-      name: "Developer Tools",
+      name: "DevOps & Tools",
       emoji: "🛠️",
-      skills: ["Git", "GitHub", "Postman", "Docker"]
+      skills: ["Git", "GitHub", "Docker", "Postman", "Vercel", "VS Code"]
+    },
+    {
+      name: "Programming Languages",
+      emoji: "👨‍💻",
+      skills: ["Python", "C", "C++", "JavaScript", "SQL"]
     },
     {
       name: "Creative Tools",
       emoji: "🎨",
       skills: ["Photoshop", "Premiere Pro", "After Effects", "Filmora"]
-    },
-    {
-      name: "Programming Languages",
-      emoji: "👨‍💻",
-      skills: ["Python", "C", "C++", "JavaScript"]
     }
   ];
 

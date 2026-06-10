@@ -1,5 +1,21 @@
 [
   {
+    "company": "Cantilever Labs",
+    "logo": "/CantileverLabs-Logo.jpg",
+    "role": "AI Engineer Intern",
+    "subtitle": "Agentic AI Development",
+    "startDate": "May 2026",
+    "endDate": "Present",
+    "location": "Remote | Hyderabad, Telangana, India",
+    "current": true,
+    "highlights": [
+      "Multi-agent blog generation pipeline (LangGraph) spanning 8 content categories with 10+ specialized agents — intake, planner, parallel writer, hallucination detector, and quality grader.",
+      "Map-Reduce async writing via asyncio.gather across all section drafts as a parallelized production training workflow pattern.",
+      "2-loop evaluation gate (hallucination + quality, capped at 2 retries each) with targeted rewriting to improve factual accuracy before publish."
+    ],
+    "tags": ["LangChain", "LangGraph", "RAG", "Agentic AI", "MCP", "Prompt Engineering"]
+  },
+  {
     "company": "SwiftSafe",
     "logo": "/SwiftSafe-Logo.png",
     "role": "AI Engineering Intern",
